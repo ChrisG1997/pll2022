@@ -1,0 +1,28 @@
+OpenROAD v2.0-3074-g944855835 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/cts/13-resizer_timing.def
+[INFO ODB-0128] Design: fll_wrapper_2
+[INFO ODB-0130]     Created 70 pins.
+[INFO ODB-0131]     Created 581 components and 3324 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2114 connections.
+[INFO ODB-0133]     Created 454 nets and 1210 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/cts/13-resizer_timing.def
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL           10504.7 u
+legalized HPWL          10782.5 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 190 instances
+[INFO DPL-0021] HPWL before           10782.5 u
+[INFO DPL-0022] HPWL after            10504.7 u
+[INFO DPL-0023] HPWL delta               -2.6 %

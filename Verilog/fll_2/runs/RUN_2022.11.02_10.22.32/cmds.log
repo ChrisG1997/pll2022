@@ -1,0 +1,146 @@
+Wed Nov 02 10:22:33 UTC 2022 - Executing "/foss/tools/openlane/2022.04.07_02.53.08/scripts/mergeLef.py -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/merged_unpadded.lef |& tee /dev/null"
+
+Wed Nov 02 10:22:33 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/mergeLib.py --output /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/merged.lib --name sky130A_merged /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Wed Nov 02 10:22:35 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/libtrim.py --cell-file /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/trimmed.lib.exclude.list --output /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/trimmed.lib /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/merged.lib"
+
+Wed Nov 02 10:22:36 UTC 2022 - Executing "echo {openlane 39e93bd396022ed06b9b827335c0b10a714dd32b} > /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/OPENLANE_VERSION"
+
+Wed Nov 02 10:22:36 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/new_tracks.py -i /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/routing/config.tracks"
+
+Wed Nov 02 10:22:37 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Wed Nov 02 10:22:37 UTC 2022 - Executing "yosys -c /foss/tools/openlane/2022.04.07_02.53.08/scripts/yosys/synth.tcl -l /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Wed Nov 02 10:22:40 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/results\/synthesis\/fll_wrapper_2.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:22:40 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:22:40 UTC 2022 - Executing "sed -i /defparam/d /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/results/synthesis/fll_wrapper_2.v"
+
+Wed Nov 02 10:22:40 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/sta.tcl"
+
+Wed Nov 02 10:22:42 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/floorplan.tcl"
+
+Wed Nov 02 10:22:43 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/defutil.py extract_core_dims --output-data /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/dimensions.txt --input-lef /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/merged.lef /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/floorplan/3-initial_fp.def"
+
+Wed Nov 02 10:22:44 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/ioplacer.tcl"
+
+Wed Nov 02 10:22:46 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/tapcell.tcl"
+
+Wed Nov 02 10:22:47 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/pdn.tcl"
+
+Wed Nov 02 10:22:48 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/replace.tcl"
+
+Wed Nov 02 10:22:51 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/resizer.tcl"
+
+Wed Nov 02 10:22:53 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Nov 02 10:22:54 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/results\/placement\/fll_wrapper_2.resized.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:22:54 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/results\/synthesis\/fll_wrapper_2.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:22:54 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/opendp.tcl"
+
+Wed Nov 02 10:22:55 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/libtrim.py --cell-file /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/cts/cts.lib.exclude.list --output /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/cts/cts.lib /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Wed Nov 02 10:22:56 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/cts.tcl"
+
+Wed Nov 02 10:24:23 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Nov 02 10:24:24 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/results\/cts\/fll_wrapper_2.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:24:24 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/results\/placement\/fll_wrapper_2.resized.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:24:24 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/resizer_timing.tcl"
+
+Wed Nov 02 10:24:26 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Nov 02 10:24:27 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/results\/cts\/fll_wrapper_2.resized.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:24:27 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/results\/cts\/fll_wrapper_2.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:24:27 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/opendp.tcl"
+
+Wed Nov 02 10:24:28 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/groute.tcl"
+
+Wed Nov 02 10:24:30 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/fill.tcl"
+
+Wed Nov 02 10:24:31 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Nov 02 10:24:32 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/tmp\/routing\/17-global.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:24:32 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/results\/cts\/fll_wrapper_2.resized.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:24:32 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/droute.tcl"
+
+Wed Nov 02 10:25:05 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/tr_drc_to_klayout_drc.py -i /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/routing/detailed.drc -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/routing/detailed.klayout.xml --design-name fll_wrapper_2"
+
+Wed Nov 02 10:25:06 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Nov 02 10:25:07 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/tmp\/routing\/19-detailed.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:25:07 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/tmp\/routing\/17-global.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:25:07 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/rcx.tcl"
+
+Wed Nov 02 10:25:09 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/rcx.tcl"
+
+Wed Nov 02 10:25:10 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/rcx.tcl"
+
+Wed Nov 02 10:25:13 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/sta.tcl"
+
+Wed Nov 02 10:25:15 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/sta_multi_corner.tcl"
+
+Wed Nov 02 10:25:19 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic/mag_gds.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/26-gdsii.log"
+
+Wed Nov 02 10:25:20 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic/gds_pointers.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/26-gds_ptrs.log"
+
+Wed Nov 02 10:25:21 UTC 2022 - Executing "sed -i -n {/^<< properties >>/,/^<< end >>/p} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/finishing/gds_ptrs.mag"
+
+Wed Nov 02 10:25:21 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic/lef.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/26-lef.log"
+
+Wed Nov 02 10:25:22 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic/maglef.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/26-maglef.log"
+
+Wed Nov 02 10:25:23 UTC 2022 - Executing "klayout -b -rm /foss/tools/openlane/2022.04.07_02.53.08/scripts/klayout/def2gds.py -rd out_gds=/foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/results/finishing/fll_wrapper_2.klayout.gds -rd tech_file=/foss/pdk/sky130A/libs.tech/klayout/sky130A.lyt -rd design_name=fll_wrapper_2 -rd in_def=/foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/results/routing/fll_wrapper_2.def -rd {in_gds=/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds } -rd config_file= -rd seal_gds= -rd lef_file=/foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/merged.lef |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/27-gdsii-klayout.log"
+
+Wed Nov 02 10:25:27 UTC 2022 - Executing "bash /foss/tools/openlane/2022.04.07_02.53.08/scripts/klayout/xor.sh /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/results/finishing/fll_wrapper_2.gds /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/results/finishing/fll_wrapper_2.klayout.gds fll_wrapper_2 /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/fll_wrapper_2.xor.gds |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/28-xor.log"
+
+Wed Nov 02 10:25:34 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/parse_klayout_xor_log.py -l /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/28-xor.log -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/28-xor.rpt"
+
+Wed Nov 02 10:25:35 UTC 2022 - Executing "bash /foss/tools/openlane/2022.04.07_02.53.08/scripts/klayout/xor.sh /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/results/finishing/fll_wrapper_2.gds /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/results/finishing/fll_wrapper_2.klayout.gds fll_wrapper_2 /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/fll_wrapper_2.xor.xml |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/28-xor.log"
+
+Wed Nov 02 10:25:42 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/parse_klayout_xor_log.py -l /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/28-xor.log -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/28-xor.rpt"
+
+Wed Nov 02 10:25:43 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/finishing/spice.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/29-spice.log"
+
+Wed Nov 02 10:25:44 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/write_powered_def.py -d /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/results/routing/fll_wrapper_2.def -l /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/merged.lef --power-port VPWR --ground-port VGND --powered-netlist {} -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/finishing/29-powered_def.def |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/30-write_powered_def.log"
+
+Wed Nov 02 10:25:45 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Nov 02 10:25:46 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/tmp\/finishing\/29-powered_netlist.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:25:46 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.22.32\/tmp\/routing\/19-detailed.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/config.tcl"
+
+Wed Nov 02 10:25:46 UTC 2022 - Executing "netgen -batch source /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/finishing/32-setup_file.lef.lvs |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/32-lef.log"
+
+Wed Nov 02 10:25:47 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic/drc.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/33-drc.log"
+
+Wed Nov 02 10:25:50 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic_drc_to_tcl.py -i /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/drc.rpt -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/drc.tcl"
+
+Wed Nov 02 10:25:51 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic_drc_to_tr_drc.py -i /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/drc.rpt -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/drc.tr"
+
+Wed Nov 02 10:25:52 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/tr_drc_to_klayout_drc.py -i /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/drc.tr -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/drc.klayout.xml --design-name fll_wrapper_2"
+
+Wed Nov 02 10:25:52 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic_drc_to_rdb.py --magic_drc_in /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/drc.rpt --rdb_out /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/finishing/drc.rdb"
+
+Wed Nov 02 10:25:53 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/antenna_check.tcl"
+
+Wed Nov 02 10:25:54 UTC 2022 - Executing "awk -v vdd=VPWR -v gnd=VGND -f /foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/power.awk /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/finishing/29-powered_netlist.v > /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/finishing/fll_wrapper_2.power"
+
+Wed Nov 02 10:25:54 UTC 2022 - Executing "awk -f /foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/cdl.awk /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/results/finishing/fll_wrapper_2.lef.spice > /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/finishing/fll_wrapper_2.cdl"
+
+Wed Nov 02 10:25:54 UTC 2022 - Executing "cvc /foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/cvcrc.sky130A |& tee /dev/null /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/logs/finishing/35-erc_screen.log"
+
+Wed Nov 02 10:25:56 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/generate_reports.py -d /foss/designs/ma2022/fll_2 --design_name fll_wrapper_2 --tag RUN_2022.11.02_10.22.32 --output_file /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/final_summary_report.csv --man_report /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/reports/manufacturability_report.rpt --run_path /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32"
+

@@ -1,0 +1,28 @@
+
+28. Executing CHECK pass (checking for obvious problems).
+Checking module fll_wrapper_2...
+Warning: Wire fll_wrapper_2.\lock is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [9] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [8] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [7] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [6] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [5] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [4] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [3] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [2] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [1] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [0] is used but has no driver.
+Warning: Wire fll_wrapper_2.\corner [2] is used but has no driver.
+Warning: Wire fll_wrapper_2.\corner [1] is used but has no driver.
+Warning: Wire fll_wrapper_2.\corner [0] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [9] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [8] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [7] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [6] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [5] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [4] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [3] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [2] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [1] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [0] is used but has no driver.
+Found and reported 24 problems.

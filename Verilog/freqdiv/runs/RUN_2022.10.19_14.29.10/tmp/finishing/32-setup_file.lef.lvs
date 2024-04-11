@@ -1,0 +1,1 @@
+lvs {/foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.spice clock_divider} {/foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/29-powered_netlist.v clock_divider} /foss/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/32-clock_divider.lef.log -json

@@ -1,0 +1,91 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO clock_divider
+  CLASS BLOCK ;
+  FOREIGN clock_divider ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 53.810 BY 64.530 ;
+  PIN VGND
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 23.440 47.840 25.040 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 37.040 47.840 38.640 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 18.830 10.640 20.430 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 32.935 10.640 34.535 51.920 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 16.640 47.840 18.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 30.240 47.840 31.840 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 43.840 47.840 45.440 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 11.770 10.640 13.370 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 25.880 10.640 27.480 51.920 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 39.985 10.640 41.585 51.920 ;
+    END
+  END VPWR
+  PIN clock_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 51.610 60.530 51.890 64.530 ;
+    END
+  END clock_in
+  PIN clock_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END clock_out
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 47.840 51.765 ;
+      LAYER met1 ;
+        RECT 0.070 10.640 51.910 51.920 ;
+      LAYER met2 ;
+        RECT 0.100 60.250 51.330 60.530 ;
+        RECT 0.100 4.280 51.880 60.250 ;
+        RECT 0.650 4.000 51.880 4.280 ;
+      LAYER met3 ;
+        RECT 11.770 10.715 41.795 51.845 ;
+      LAYER met4 ;
+        RECT 20.830 10.640 25.480 51.920 ;
+        RECT 27.880 10.640 32.535 51.920 ;
+  END
+END clock_divider
+END LIBRARY
+

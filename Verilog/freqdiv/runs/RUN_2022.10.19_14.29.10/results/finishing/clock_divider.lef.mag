@@ -1,0 +1,66 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1666190171
+<< obsli1 >>
+rect 1104 2159 9568 10353
+<< obsm1 >>
+rect 14 2128 10382 10384
+<< metal2 >>
+rect 10322 12106 10378 12906
+rect 18 0 74 800
+<< obsm2 >>
+rect 20 12050 10266 12106
+rect 20 856 10376 12050
+rect 130 800 10376 856
+<< obsm3 >>
+rect 2354 2143 8359 10369
+<< metal4 >>
+rect 2354 2128 2674 10384
+rect 3766 2128 4086 10384
+rect 5176 2128 5496 10384
+rect 6587 2128 6907 10384
+rect 7997 2128 8317 10384
+<< obsm4 >>
+rect 4166 2128 5096 10384
+rect 5576 2128 6507 10384
+<< metal5 >>
+rect 1104 8768 9568 9088
+rect 1104 7408 9568 7728
+rect 1104 6048 9568 6368
+rect 1104 4688 9568 5008
+rect 1104 3328 9568 3648
+<< labels >>
+rlabel metal5 s 1104 4688 9568 5008 6 VGND
+port 1 nsew ground input
+rlabel metal5 s 1104 7408 9568 7728 6 VGND
+port 1 nsew ground input
+rlabel metal4 s 3766 2128 4086 10384 6 VGND
+port 1 nsew ground input
+rlabel metal4 s 6587 2128 6907 10384 6 VGND
+port 1 nsew ground input
+rlabel metal5 s 1104 3328 9568 3648 6 VPWR
+port 2 nsew power input
+rlabel metal5 s 1104 6048 9568 6368 6 VPWR
+port 2 nsew power input
+rlabel metal5 s 1104 8768 9568 9088 6 VPWR
+port 2 nsew power input
+rlabel metal4 s 2354 2128 2674 10384 6 VPWR
+port 2 nsew power input
+rlabel metal4 s 5176 2128 5496 10384 6 VPWR
+port 2 nsew power input
+rlabel metal4 s 7997 2128 8317 10384 6 VPWR
+port 2 nsew power input
+rlabel metal2 s 10322 12106 10378 12906 6 clock_in
+port 3 nsew signal input
+rlabel metal2 s 18 0 74 800 6 clock_out
+port 4 nsew signal output
+<< properties >>
+string FIXED_BBOX 0 0 10762 12906
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 308096
+string GDS_FILE /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.magic.gds
+string GDS_START 114506
+<< end >>
+

@@ -1,0 +1,17 @@
+
+Input: /foss/designs/ma2022/wrapper/runs/RUN_2022.11.11_11.09.27/results/routing/wrapper.def
+Output: /foss/designs/ma2022/wrapper/runs/RUN_2022.11.11_11.09.27/results/signoff/wrapper.klayout.gds
+Design: wrapper
+Technology File: /foss/pdks/sky130A/libs.tech/klayout/tech/sky130A.lyt
+GDS File List: ['/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds']
+LEF File: /foss/designs/ma2022/wrapper/runs/RUN_2022.11.11_11.09.27/tmp/merged.nom.lef
+
+[INFO] Clearing cells...
+[INFO] Merging GDS files...
+	/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+[INFO] Copying toplevel cell 'wrapper'
+WARNING: no fill config file specified
+[INFO] Checking for missing GDS...
+[INFO] All LEF cells have matching GDS cells
+[INFO] Writing out GDS '/foss/designs/ma2022/wrapper/runs/RUN_2022.11.11_11.09.27/results/signoff/wrapper.klayout.gds'
+[INFO] Done.

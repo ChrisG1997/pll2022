@@ -1,0 +1,30 @@
+
+24. Printing statistics.
+
+=== clock_divider ===
+
+   Number of wires:                 73
+   Number of wire bits:             73
+   Number of public wires:          30
+   Number of public wire bits:      30
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 72
+     sky130_fd_sc_hd__a21oi_2        1
+     sky130_fd_sc_hd__a31o_2         1
+     sky130_fd_sc_hd__and3_2         1
+     sky130_fd_sc_hd__conb_1        24
+     sky130_fd_sc_hd__dfxtp_2       29
+     sky130_fd_sc_hd__nor2_2         1
+     sky130_fd_sc_hd__nor2_4         2
+     sky130_fd_sc_hd__nor3_4         1
+     sky130_fd_sc_hd__o21ba_4        1
+     sky130_fd_sc_hd__or2_4          1
+     sky130_fd_sc_hd__or3_4          2
+     sky130_fd_sc_hd__or4_2          2
+     sky130_fd_sc_hd__or4_4          5
+     sky130_fd_sc_hd__xnor2_2        1
+
+   Chip area for module '\clock_divider': 914.627200
+

@@ -1,0 +1,25 @@
+
+10. Printing statistics.
+
+=== clock_divider ===
+
+   Number of wires:                115
+   Number of wire bits:            196
+   Number of public wires:           3
+   Number of public wire bits:      30
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                167
+     $_ANDNOT_                      19
+     $_AND_                          2
+     $_DFF_P_                        1
+     $_NAND_                        13
+     $_NOR_                          2
+     $_NOT_                          1
+     $_ORNOT_                        2
+     $_OR_                          72
+     $_SDFF_PP0_                    28
+     $_XNOR_                        13
+     $_XOR_                         14
+

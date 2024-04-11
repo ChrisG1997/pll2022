@@ -1,0 +1,36 @@
+OpenROAD v2.0-3074-g944855835 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0163] /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib line 23, default_fanout_load is 0.0.
+[INFO ODB-0222] Reading LEF file: /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/merged_unpadded.lef
+[WARNING ORD-0033] -order_wires is deprecated.
+[INFO ODB-0127] Reading DEF file: /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/routing/clock_divider.def
+[INFO ODB-0128] Design: clock_divider
+[INFO ODB-0130]     Created 4 pins.
+[INFO ODB-0131]     Created 264 components and 1224 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 1006 connections.
+[INFO ODB-0133]     Created 75 nets and 194 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/routing/clock_divider.def
+[WARNING STA-0357] virtual clock clk can not be propagated.
+[INFO]: Setting RC values...
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of clock_divider ...
+Notice 0: Split top of 10 T shapes.
+[INFO RCX-0435] Reading extraction model file /foss/pdk/sky130A/libs.tech/openlane/rcx_rules.info ...
+[INFO RCX-0436] RC segment generation clock_divider (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 211 rc segments
+[INFO RCX-0439] Coupling Cap extraction clock_divider ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 475 wires to be extracted
+[INFO RCX-0442] 55% completion -- 262 wires have been extracted
+[INFO RCX-0442] 100% completion -- 475 wires have been extracted
+[INFO RCX-0045] Extract 75 nets, 286 rsegs, 286 caps, 414 ccs
+[INFO RCX-0015] Finished extracting clock_divider.
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 75 nets finished
+[INFO RCX-0017] Finished writing SPEF ...

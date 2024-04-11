@@ -1,0 +1,15 @@
+[ERROR]: during executing openroad script /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/pdn.tcl
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+[INFO ODB-0128] Design: clk_divider
+[INFO ODB-0130]     Created 6 pins.
+[INFO ODB-0131]     Created 3 components and 14 component-terminals.
+[INFO ODB-0133]     Created 6 nets and 1 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/results/floorplan/clk_divider.def
+[INFO PDN-0016] Power Delivery Network Generator: Generating PDN
+  config: /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/pdn_cfg.tcl
+[ERROR PDN-0085] Pitch 1.0733333333333335 specified for layer met4 is less than 2 x (width + spacing) (width=1.6, spacing=0.537).
+Error: pdn_cfg.tcl, 39 PDN-0085
+child process exited abnormally
+
+[ERROR]: Flow failed.

@@ -1,0 +1,380 @@
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_12 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_12       |Circuit 2: sky130_fd_sc_hd__decap_12       
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_12 and sky130_fd_sc_hd__decap_12 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__mux2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__mux2_1         |Circuit 2: sky130_fd_sc_hd__mux2_1         
+-------------------------------------------|-------------------------------------------
+A0                                         |A0                                         
+A1                                         |A1                                         
+S                                          |S                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__mux2_1 and sky130_fd_sc_hd__mux2_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_8        |Circuit 2: sky130_fd_sc_hd__decap_8        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dfrtp_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dfrtp_1        |Circuit 2: sky130_fd_sc_hd__dfrtp_1        
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+D                                          |D                                          
+RESET_B                                    |RESET_B                                    
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+Q                                          |Q                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dfrtp_1 and sky130_fd_sc_hd__dfrtp_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__inv_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__inv_2          |Circuit 2: sky130_fd_sc_hd__inv_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__inv_2 and sky130_fd_sc_hd__inv_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_1       |Circuit 2: sky130_fd_sc_hd__clkbuf_1       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_1 and sky130_fd_sc_hd__clkbuf_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_4        |Circuit 2: sky130_fd_sc_hd__decap_4        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_4 and sky130_fd_sc_hd__decap_4 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__fill_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_2         |Circuit 2: sky130_fd_sc_hd__fill_2         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_2 and sky130_fd_sc_hd__fill_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_6 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_6        |Circuit 2: sky130_fd_sc_hd__decap_6        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_6 and sky130_fd_sc_hd__decap_6 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__fill_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_1         |Circuit 2: sky130_fd_sc_hd__fill_1         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_1 and sky130_fd_sc_hd__fill_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_2       |Circuit 2: sky130_fd_sc_hd__clkbuf_2       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_2 and sky130_fd_sc_hd__clkbuf_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__buf_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__buf_2          |Circuit 2: sky130_fd_sc_hd__buf_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__buf_2 and sky130_fd_sc_hd__buf_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__tapvpwrvgnd_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__tapvpwrvgnd_1  |Circuit 2: sky130_fd_sc_hd__tapvpwrvgnd_1  
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__tapvpwrvgnd_1 and sky130_fd_sc_hd__tapvpwrvgnd_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dfxtp_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dfxtp_1        |Circuit 2: sky130_fd_sc_hd__dfxtp_1        
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+D                                          |D                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+Q                                          |Q                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dfxtp_1 and sky130_fd_sc_hd__dfxtp_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_16 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_16      |Circuit 2: sky130_fd_sc_hd__clkbuf_16      
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_16 and sky130_fd_sc_hd__clkbuf_16 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dlymetal6s2s_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dlymetal6s2s_1 |Circuit 2: sky130_fd_sc_hd__dlymetal6s2s_1 
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dlymetal6s2s_1 and sky130_fd_sc_hd__dlymetal6s2s_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__or2b_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__or2b_1         |Circuit 2: sky130_fd_sc_hd__or2b_1         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B_N                                        |B_N                                        
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__or2b_1 and sky130_fd_sc_hd__or2b_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dfrtp_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dfrtp_2        |Circuit 2: sky130_fd_sc_hd__dfrtp_2        
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+D                                          |D                                          
+RESET_B                                    |RESET_B                                    
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+Q                                          |Q                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dfrtp_2 and sky130_fd_sc_hd__dfrtp_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__diode_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__diode_2        |Circuit 2: sky130_fd_sc_hd__diode_2        
+-------------------------------------------|-------------------------------------------
+DIODE                                      |DIODE                                      
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__diode_2 and sky130_fd_sc_hd__diode_2 are equivalent.
+
+Class shiftregister (0):  Merged 767 parallel devices.
+Class shiftregister (1):  Merged 767 parallel devices.
+Subcircuit summary:
+Circuit 1: shiftregister                   |Circuit 2: shiftregister                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__decap_12 (62->1)          |sky130_fd_sc_hd__decap_12 (62->1)          
+sky130_fd_sc_hd__mux2_1 (96)               |sky130_fd_sc_hd__mux2_1 (96)               
+sky130_fd_sc_hd__decap_8 (82->1)           |sky130_fd_sc_hd__decap_8 (82->1)           
+sky130_fd_sc_hd__dfrtp_1 (31)              |sky130_fd_sc_hd__dfrtp_1 (31)              
+sky130_fd_sc_hd__inv_2 (32)                |sky130_fd_sc_hd__inv_2 (32)                
+sky130_fd_sc_hd__clkbuf_1 (90)             |sky130_fd_sc_hd__clkbuf_1 (90)             
+sky130_fd_sc_hd__decap_4 (241->1)          |sky130_fd_sc_hd__decap_4 (241->1)          
+sky130_fd_sc_hd__fill_2 (44->1)            |sky130_fd_sc_hd__fill_2 (44->1)            
+sky130_fd_sc_hd__decap_6 (67->1)           |sky130_fd_sc_hd__decap_6 (67->1)           
+sky130_fd_sc_hd__fill_1 (101->1)           |sky130_fd_sc_hd__fill_1 (101->1)           
+sky130_fd_sc_hd__clkbuf_2 (29)             |sky130_fd_sc_hd__clkbuf_2 (29)             
+sky130_fd_sc_hd__decap_3 (76->1)           |sky130_fd_sc_hd__decap_3 (76->1)           
+sky130_fd_sc_hd__buf_2 (49)                |sky130_fd_sc_hd__buf_2 (49)                
+sky130_fd_sc_hd__tapvpwrvgnd_1 (102->1)    |sky130_fd_sc_hd__tapvpwrvgnd_1 (102->1)    
+sky130_fd_sc_hd__dfxtp_1 (32)              |sky130_fd_sc_hd__dfxtp_1 (32)              
+sky130_fd_sc_hd__clkbuf_16 (1)             |sky130_fd_sc_hd__clkbuf_16 (1)             
+sky130_fd_sc_hd__dlymetal6s2s_1 (7)        |sky130_fd_sc_hd__dlymetal6s2s_1 (7)        
+sky130_fd_sc_hd__or2b_1 (1)                |sky130_fd_sc_hd__or2b_1 (1)                
+sky130_fd_sc_hd__dfrtp_2 (1)               |sky130_fd_sc_hd__dfrtp_2 (1)               
+sky130_fd_sc_hd__diode_2 (2)               |sky130_fd_sc_hd__diode_2 (2)               
+Number of devices: 379                     |Number of devices: 379                     
+Number of nets: 408                        |Number of nets: 408                        
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: shiftregister                   |Circuit 2: shiftregister                   
+-------------------------------------------|-------------------------------------------
+clk                                        |clk                                        
+r_read[24]                                 |r_read[24]                                 
+r_read[27]                                 |r_read[27]                                 
+read                                       |read                                       
+reset                                      |reset                                      
+load                                       |load                                       
+r_read[31]                                 |r_read[31]                                 
+r_read[19]                                 |r_read[19]                                 
+r_read[21]                                 |r_read[21]                                 
+r_read[20]                                 |r_read[20]                                 
+r_read[18]                                 |r_read[18]                                 
+r_read[23]                                 |r_read[23]                                 
+r_read[1]                                  |r_read[1]                                  
+r_read[0]                                  |r_read[0]                                  
+r_read[22]                                 |r_read[22]                                 
+r_read[26]                                 |r_read[26]                                 
+r_read[29]                                 |r_read[29]                                 
+r_read[30]                                 |r_read[30]                                 
+r_read[28]                                 |r_read[28]                                 
+r_read[3]                                  |r_read[3]                                  
+r_read[2]                                  |r_read[2]                                  
+r_read[5]                                  |r_read[5]                                  
+r_read[4]                                  |r_read[4]                                  
+r_read[7]                                  |r_read[7]                                  
+r_read[8]                                  |r_read[8]                                  
+r_read[6]                                  |r_read[6]                                  
+r_read[9]                                  |r_read[9]                                  
+r_read[11]                                 |r_read[11]                                 
+r_read[12]                                 |r_read[12]                                 
+r_read[13]                                 |r_read[13]                                 
+r_read[14]                                 |r_read[14]                                 
+r_read[15]                                 |r_read[15]                                 
+s_in                                       |s_in                                       
+r_read[17]                                 |r_read[17]                                 
+r_read[25]                                 |r_read[25]                                 
+r_read[10]                                 |r_read[10]                                 
+r_read[16]                                 |r_read[16]                                 
+r_load[23]                                 |r_load[23]                                 
+r_load[26]                                 |r_load[26]                                 
+r_load[28]                                 |r_load[28]                                 
+r_load[4]                                  |r_load[4]                                  
+r_load[0]                                  |r_load[0]                                  
+r_load[11]                                 |r_load[11]                                 
+r_load[20]                                 |r_load[20]                                 
+r_load[18]                                 |r_load[18]                                 
+r_load[25]                                 |r_load[25]                                 
+r_load[21]                                 |r_load[21]                                 
+r_load[27]                                 |r_load[27]                                 
+r_load[1]                                  |r_load[1]                                  
+r_load[2]                                  |r_load[2]                                  
+r_load[31]                                 |r_load[31]                                 
+r_load[3]                                  |r_load[3]                                  
+r_load[13]                                 |r_load[13]                                 
+r_load[12]                                 |r_load[12]                                 
+r_load[10]                                 |r_load[10]                                 
+r_load[14]                                 |r_load[14]                                 
+r_load[15]                                 |r_load[15]                                 
+r_load[16]                                 |r_load[16]                                 
+r_load[22]                                 |r_load[22]                                 
+r_load[24]                                 |r_load[24]                                 
+r_load[29]                                 |r_load[29]                                 
+r_load[30]                                 |r_load[30]                                 
+r_load[7]                                  |r_load[7]                                  
+r_load[19]                                 |r_load[19]                                 
+r_load[17]                                 |r_load[17]                                 
+r_load[5]                                  |r_load[5]                                  
+r_load[6]                                  |r_load[6]                                  
+r_load[8]                                  |r_load[8]                                  
+r_load[9]                                  |r_load[9]                                  
+s_out                                      |s_out                                      
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes shiftregister and shiftregister are equivalent.
+Circuits match uniquely.

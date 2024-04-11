@@ -1,0 +1,213 @@
+CVC: Log output to /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/clock_divider.rpt
+CVC: Error output to /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/clock_divider.rpt.error.gz
+CVC: Debug output to /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/clock_divider.rpt.debug.gz
+CVC: Circuit Validation Check  Version 1.1.0
+CVC: Start: Wed Oct 19 14:36:46 2022
+
+Using the following parameters for CVC (Circuit Validation Check) from /foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/cvcrc.sky130A
+CVC_TOP = 'clock_divider'
+CVC_NETLIST = '/foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/clock_divider.cdl'
+CVC_MODE = 'clock_divider'
+CVC_MODEL_FILE = '/foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/cvc.sky130A.models'
+CVC_POWER_FILE = '/foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/clock_divider.power'
+CVC_FUSE_FILE = ''
+CVC_REPORT_FILE = '/foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/clock_divider.rpt'
+CVC_REPORT_TITLE = 'CVC $CVC_TOP'
+CVC_CIRCUIT_ERROR_LIMIT = '100'
+CVC_SEARCH_LIMIT = '100'
+CVC_LEAK_LIMIT = '0.0002'
+CVC_SOI = 'false'
+CVC_SCRC = 'false'
+CVC_VTH_GATES = 'false'
+CVC_MIN_VTH_GATES = 'false'
+CVC_IGNORE_VTH_FLOATING = 'false'
+CVC_IGNORE_NO_LEAK_FLOATING = 'false'
+CVC_LEAK_OVERVOLTAGE = 'true'
+CVC_LOGIC_DIODES = 'false'
+CVC_ANALOG_GATES = 'true'
+CVC_BACKUP_RESULTS = 'false'
+CVC_MOS_DIODE_ERROR_THRESHOLD = '0'
+CVC_SHORT_ERROR_THRESHOLD = '0'
+CVC_BIAS_ERROR_THRESHOLD = '0'
+CVC_FORWARD_ERROR_THRESHOLD = '0'
+CVC_FLOATING_ERROR_THRESHOLD = '0'
+CVC_GATE_ERROR_THRESHOLD = '0'
+CVC_LEAK?_ERROR_THRESHOLD = '0'
+CVC_EXPECTED_ERROR_THRESHOLD = '0'
+CVC_OVERVOLTAGE_ERROR_THRESHOLD = '0'
+CVC_PARALLEL_CIRCUIT_PORT_LIMIT = '0'
+CVC_CELL_ERROR_LIMIT_FILE = ''
+CVC_CELL_CHECKSUM_FILE = ''
+CVC_LARGE_CIRCUIT_SIZE = '10000000'
+CVC_NET_CHECK_FILE = ''
+CVC_MODEL_CHECK_FILE = ''
+End of parameters
+
+CVC: Reading device model settings...
+CVC: Reading power settings...
+CVC: Parsing netlist /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/clock_divider.cdl
+Cdl fixed data size 19865
+Usage CDL: Time: 0  Memory: 7200  I/O: 8  Swap: 0
+CVC: Counting and linking...
+CVC: Assigning IDs ...
+Usage DB: Time: 0  Memory: 7200  I/O: 8  Swap: 0
+CVC: 265(265) instances, 480(480) nets, 1184(1184) devices.
+CVC: Setting models ...
+Setting model tolerances...
+CVC: Shorting switches...
+	Shorted 48 short
+Setting instance power...
+
+ModelList> filename /foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/cvc.sky130A.models
+ Model> sky130_fd_pr__cap_mim_m3_1         0 C->capacitor  Parameters>
+ Model> sky130_fd_pr__cap_mim_m3_2         0 C->capacitor  Parameters>
+ Model> sky130_fd_pr__cap_var         0 C->capacitor  Parameters>
+ Model> condiode           0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__diode_pd2nw_05v5         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__diode_pw2nd_05v5         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__diode_pw2nd_11v0         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__model__parasitic__diode_ps2dn         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__model__parasitic__diode_ps2nw         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__model__parasitic__diode_pw2dn         0 D->diode      Parameters> Diodes> 1-2
+ Model> nfet_01v8        568 M->nmos       Parameters> Vth=0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> pfet_01v8_hvt       568 M->pmos       Parameters> Vth=-0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_bs_flash__special_sonosfet_star         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__esd_nfet_g5v0d10v5         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_01v8         0 M->nmos       Parameters> Vth=0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_01v8_lvt         0 M->nmos       Parameters> Vth=0.1 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_03v3_nvt         0 M->nmos       Parameters> Vth=0.2 Vds=3.3 Vgs=3.3 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_05v0_nvt         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_g5v0d10v5         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__pfet_01v8         0 M->pmos       Parameters> Vth=-0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pfet_01v8_hvt         0 M->pmos       Parameters> Vth=-0.3 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pfet_01v8_lvt         0 M->pmos       Parameters> Vth=-0.1 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pfet_g5v0d10v5         0 M->pmos       Parameters> Vth=-0.2 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__special_nfet_latch         0 M->nmos       Parameters> Vth=0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__special_pfet_pass         0 M->pmos       Parameters> Vth=-0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pnp_05v5         0 Q->bipolar    Parameters>
+ Model> short             48 R->switch_on  Parameters>
+ Model> sky130_fd_pr__res_generic_m1         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m2         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m3         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m4         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m5         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_nd         0 R->resistor   Parameters> R=l/w*120
+ Model> sky130_fd_pr__res_generic_nd__hv         0 R->resistor   Parameters> R=l/w*114
+ Model> sky130_fd_pr__res_generic_pd__hv         0 R->resistor   Parameters> R=l/w*191
+ Model> sky130_fd_pr__res_generic_po         0 R->resistor   Parameters> R=l/w*48
+ Model> sky130_fd_pr__res_high_po         0 R->resistor   Parameters> R=l/w*2000
+ Model> sky130_fd_pr__res_xhigh_po         0 R->resistor   Parameters> R=l/w*2000
+ModelList> end
+
+Power List> filename /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/clock_divider.power
+ VPWR power 1.8 -> 1.8 power
+ VGND power 0.0 -> 0.0 power
+ clock_in~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+> expected values
+> macros
+ #define std_input min@VGND max@VPWR -> min@0.0 max@1.8
+Power List> end
+
+CVC: Linking devices...
+Usage EQUIV: Time: 0  Memory: 7684  I/O: 16  Swap: 0
+Power nets 7
+Hash dump:parameter->resistance map
+Contains 53 buckets, 25 elements
+Element count 0, 28
+Element count 1, 25
+Unused hash: 0.53, average depth 1.00
+Hash dump:text->circuit map
+Contains 409 buckets, 438 elements
+Element count 0, 135
+Element count 1, 148
+Element count 2, 93
+Element count 3, 28
+Element count 4, 5
+Unused hash: 0.33, average depth 1.95
+Hash dump:string->text map
+Contains 823 buckets, 1496 elements
+Element count 0, 143
+Element count 1, 233
+Element count 2, 209
+Element count 3, 141
+Element count 4, 74
+Element count 5, 15
+Element count 6, 5
+Element count 7, 3
+Unused hash: 0.17, average depth 2.82
+CVC: Shorting non conducting resistors...
+CVC: Calculating resistor voltages...
+Usage RES: Time: 0  Memory: 7684  I/O: 16  Swap: 0
+Power nets 7
+CVC: Calculating min/max voltages...
+Processing trivial nets found 134 trivial nets
+CVC: Ignoring invalid calculations...
+CVC:   Removed 0 calculations
+Copying master nets
+CVC: Ignoring non-conducting devices...
+CVC:   Ignored 0 devices
+Usage MIN/MAX1: Time: 0  Memory: 7684  I/O: 16  Swap: 0
+Power nets 147
+! Checking forward bias diode errors: 
+
+! Checking nmos source/drain vs bias errors: 
+
+! Checking nmos gate vs source errors: 
+
+! Checking pmos source/drain vs bias errors: 
+
+! Checking pmos gate vs source errors: 
+
+Usage ERROR: Time: 0  Memory: 7684  I/O: 16  Swap: 0
+CVC: Propagating Simulation voltages 1...
+Usage SIM1: Time: 0  Memory: 7684  I/O: 16  Swap: 0
+Power nets 147
+CVC: Propagating Simulation voltages 3...
+Usage SIM2: Time: 0  Memory: 7684  I/O: 16  Swap: 0
+Power nets 147
+Added 0 latch voltages
+CVC: Calculating min/max voltages...
+Processing trivial nets found 134 trivial nets
+CVC: Ignoring invalid calculations...
+CVC:   Removed 0 calculations
+Copying master nets
+CVC: Ignoring non-conducting devices...
+CVC:   Ignored 0 devices
+Usage MIN/MAX2: Time: 0  Memory: 7684  I/O: 24  Swap: 0
+Power nets 287
+! Checking overvoltage errors
+
+! Checking nmos possible leak errors: 
+
+! Checking pmos possible leak errors: 
+
+! Checking mos floating input errors:
+
+! Checking expected values:
+
+CVC: Error Counts
+CVC: Fuse Problems:         0
+CVC: Min Voltage Conflicts: 0
+CVC: Max Voltage Conflicts: 0
+CVC: Leaks:                 0
+CVC: LDD drain->source:     0
+CVC: HI-Z Inputs:           0
+CVC: Forward Bias Diodes:   0
+CVC: NMOS Source vs Bulk:   0
+CVC: NMOS Gate vs Source:   0
+CVC: NMOS Possible Leaks:   0
+CVC: PMOS Source vs Bulk:   0
+CVC: PMOS Gate vs Source:   0
+CVC: PMOS Possible Leaks:   0
+CVC: Overvoltage-VBG:       0
+CVC: Overvoltage-VBS:       0
+CVC: Overvoltage-VDS:       0
+CVC: Overvoltage-VGS:       0
+CVC: Model errors:          0
+CVC: Unexpected voltage :   0
+CVC: Total:                 0
+Usage Total: Time: 0  Memory: 8388  I/O: 64  Swap: 0
+Virtual net update/access 3424/110044
+CVC: Log output to /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/clock_divider.rpt
+CVC: End: Wed Oct 19 14:36:46 2022
+

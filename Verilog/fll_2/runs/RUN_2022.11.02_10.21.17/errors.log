@@ -1,0 +1,15 @@
+[ERROR]: during executing openroad script /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/resizer.tcl
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+[INFO RSZ-0058] Using max wire length 2319um.
+[INFO RSZ-0039] Resized 299 instances.
+[INFO DPL-0034] Detailed placement failed on:
+[INFO DPL-0035]  input31
+[INFO DPL-0035]  input32
+[INFO DPL-0035]  input32
+[INFO DPL-0035]  input43
+[ERROR DPL-0036] Detailed placement failed.
+Error: resizer.tcl, 79 DPL-0036
+child process exited abnormally
+
+[ERROR]: Flow failed.

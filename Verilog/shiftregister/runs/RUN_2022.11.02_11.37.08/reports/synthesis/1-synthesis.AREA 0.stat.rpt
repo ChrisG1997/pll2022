@@ -1,0 +1,20 @@
+
+24. Printing statistics.
+
+=== shiftregister ===
+
+   Number of wires:                929
+   Number of wire bits:           1127
+   Number of public wires:         107
+   Number of public wire bits:     305
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1022
+     sky130_fd_sc_hd__buf_1        322
+     sky130_fd_sc_hd__dfrtp_2      200
+     sky130_fd_sc_hd__inv_2        200
+     sky130_fd_sc_hd__mux2_2       300
+
+   Chip area for module '\shiftregister': 10592.659200
+

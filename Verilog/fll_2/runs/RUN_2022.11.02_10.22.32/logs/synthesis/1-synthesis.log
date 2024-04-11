@@ -1,0 +1,1373 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.12+45 (git sha1 cfe940a98, gcc 9.2.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Verilog-2005 frontend: /foss/designs/ma2022/fll_2/src/fll_wrapper_2.v
+Parsing SystemVerilog input from `/foss/designs/ma2022/fll_2/src/fll_wrapper_2.v' to AST representation.
+Generating RTLIL representation for module `\fll_wrapper_2'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /foss/designs/ma2022/fll_2/src/mux.v
+Parsing SystemVerilog input from `/foss/designs/ma2022/fll_2/src/mux.v' to AST representation.
+Generating RTLIL representation for module `\mux'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /foss/designs/ma2022/fll_2/src/bufferreg.v
+Parsing SystemVerilog input from `/foss/designs/ma2022/fll_2/src/bufferreg.v' to AST representation.
+Generating RTLIL representation for module `\bufferreg'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /foss/designs/ma2022/fll_2/src/fll_2.v
+Parsing SystemVerilog input from `/foss/designs/ma2022/fll_2/src/fll_2.v' to AST representation.
+Generating RTLIL representation for module `\fll_2'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /foss/designs/ma2022/fll_2/src/fll_counter.v
+Parsing SystemVerilog input from `/foss/designs/ma2022/fll_2/src/fll_counter.v' to AST representation.
+Generating RTLIL representation for module `\fll_counter'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /foss/designs/ma2022/fll_2/src/pwm_dac.v
+Parsing SystemVerilog input from `/foss/designs/ma2022/fll_2/src/pwm_dac.v' to AST representation.
+Generating RTLIL representation for module `\pwm_dac'.
+Successfully finished Verilog frontend.
+
+7. Generating Graphviz representation of design.
+Writing dot description to `/foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/hierarchy.dot'.
+Dumping module fll_wrapper_2 to page 1.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \fll_wrapper_2
+Used module:     \bufferreg
+Used module:     \mux
+Used module:     \fll_2
+Used module:         \fll_counter
+Parameter \N = 10
+
+8.2. Executing AST frontend in derive mode using pre-parsed AST for module `\bufferreg'.
+Parameter \N = 10
+Generating RTLIL representation for module `$paramod\bufferreg\N=s32'00000000000000000000000000001010'.
+Parameter \N = 10
+
+8.3. Executing AST frontend in derive mode using pre-parsed AST for module `\mux'.
+Parameter \N = 10
+Generating RTLIL representation for module `$paramod\mux\N=s32'00000000000000000000000000001010'.
+Parameter \N = 10
+
+8.4. Executing AST frontend in derive mode using pre-parsed AST for module `\fll_2'.
+Parameter \N = 10
+Generating RTLIL representation for module `$paramod\fll_2\N=s32'00000000000000000000000000001010'.
+Parameter \N = 32
+
+8.5. Executing AST frontend in derive mode using pre-parsed AST for module `\fll_counter'.
+Parameter \N = 32
+Generating RTLIL representation for module `$paramod\fll_counter\N=s32'00000000000000000000000000100000'.
+Parameter \N = 32
+Found cached RTLIL representation for module `$paramod\fll_counter\N=s32'00000000000000000000000000100000'.
+
+8.6. Analyzing design hierarchy..
+Top module:  \fll_wrapper_2
+Used module:     $paramod\bufferreg\N=s32'00000000000000000000000000001010
+Used module:     $paramod\mux\N=s32'00000000000000000000000000001010
+Used module:     $paramod\fll_2\N=s32'00000000000000000000000000001010
+Used module:         \fll_counter
+Parameter \N = 10
+
+8.7. Executing AST frontend in derive mode using pre-parsed AST for module `\fll_counter'.
+Parameter \N = 10
+Generating RTLIL representation for module `$paramod\fll_counter\N=s32'00000000000000000000000000001010'.
+Parameter \N = 10
+Found cached RTLIL representation for module `$paramod\fll_counter\N=s32'00000000000000000000000000001010'.
+
+8.8. Analyzing design hierarchy..
+Top module:  \fll_wrapper_2
+Used module:     $paramod\bufferreg\N=s32'00000000000000000000000000001010
+Used module:     $paramod\mux\N=s32'00000000000000000000000000001010
+Used module:     $paramod\fll_2\N=s32'00000000000000000000000000001010
+Used module:         $paramod\fll_counter\N=s32'00000000000000000000000000001010
+
+8.9. Analyzing design hierarchy..
+Top module:  \fll_wrapper_2
+Used module:     $paramod\bufferreg\N=s32'00000000000000000000000000001010
+Used module:     $paramod\mux\N=s32'00000000000000000000000000001010
+Used module:     $paramod\fll_2\N=s32'00000000000000000000000000001010
+Used module:         $paramod\fll_counter\N=s32'00000000000000000000000000001010
+Removing unused module `$paramod\fll_counter\N=s32'00000000000000000000000000100000'.
+Removing unused module `\pwm_dac'.
+Removing unused module `\fll_counter'.
+Removing unused module `\fll_2'.
+Removing unused module `\bufferreg'.
+Removing unused module `\mux'.
+Removed 6 unused modules.
+
+9. Executing TRIBUF pass.
+
+10. Executing SYNTH pass.
+
+10.1. Executing HIERARCHY pass (managing design hierarchy).
+
+10.1.1. Analyzing design hierarchy..
+Top module:  \fll_wrapper_2
+Used module:     $paramod\bufferreg\N=s32'00000000000000000000000000001010
+Used module:     $paramod\mux\N=s32'00000000000000000000000000001010
+Used module:     $paramod\fll_2\N=s32'00000000000000000000000000001010
+Used module:         $paramod\fll_counter\N=s32'00000000000000000000000000001010
+
+10.1.2. Analyzing design hierarchy..
+Top module:  \fll_wrapper_2
+Used module:     $paramod\bufferreg\N=s32'00000000000000000000000000001010
+Used module:     $paramod\mux\N=s32'00000000000000000000000000001010
+Used module:     $paramod\fll_2\N=s32'00000000000000000000000000001010
+Used module:         $paramod\fll_counter\N=s32'00000000000000000000000000001010
+Removed 0 unused modules.
+
+10.2. Executing PROC pass (convert processes to netlists).
+
+10.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+10.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 6 switch rules as full_case in process $proc$/foss/designs/ma2022/fll_2/src/fll_2.v:26$30 in module $paramod\fll_2\N=s32'00000000000000000000000000001010.
+Marked 1 switch rules as full_case in process $proc$/foss/designs/ma2022/fll_2/src/bufferreg.v:11$27 in module $paramod\bufferreg\N=s32'00000000000000000000000000001010.
+Marked 1 switch rules as full_case in process $proc$/foss/designs/ma2022/fll_2/src/fll_counter.v:11$49 in module $paramod\fll_counter\N=s32'00000000000000000000000000001010.
+Removed a total of 0 dead cases.
+
+10.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 6 assignments to connections.
+
+10.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:20$45'.
+  Set init value: \corner_tmp = 3'010
+Found init rule in `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:19$44'.
+  Set init value: \tmp = 10'0000000000
+Found init rule in `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:16$43'.
+  Set init value: \counter_reset = 1'1
+Found init rule in `$paramod\bufferreg\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/bufferreg.v:9$28'.
+  Set init value: \tmp = 10'0000000000
+Found init rule in `$paramod\fll_counter\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_counter.v:9$51'.
+  Set init value: \count = 10'0000000000
+
+10.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset in `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:26$30'.
+Found async reset \reset in `$paramod\bufferreg\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/bufferreg.v:11$27'.
+Found async reset \reset in `$paramod\fll_counter\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_counter.v:11$49'.
+
+10.2.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:20$45'.
+Creating decoders for process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:19$44'.
+Creating decoders for process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:16$43'.
+Creating decoders for process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:26$30'.
+     1/10: $6\corner_tmp[2:0]
+     2/10: $5\corner_tmp[2:0]
+     3/10: $4\corner_tmp[2:0]
+     4/10: $3\corner_tmp[2:0]
+     5/10: $2\corner_tmp[2:0]
+     6/10: $1\corner_tmp[2:0]
+     7/10: $0\strobe[0:0]
+     8/10: $0\counter_reset[0:0]
+     9/10: $0\tmp[9:0]
+    10/10: $0\locked[0:0]
+Creating decoders for process `$paramod\bufferreg\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/bufferreg.v:9$28'.
+Creating decoders for process `$paramod\bufferreg\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/bufferreg.v:11$27'.
+     1/1: $0\tmp[9:0]
+Creating decoders for process `$paramod\fll_counter\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_counter.v:9$51'.
+Creating decoders for process `$paramod\fll_counter\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_counter.v:11$49'.
+     1/1: $0\count[9:0]
+
+10.2.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+10.2.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod\fll_2\N=s32'00000000000000000000000000001010.\strobe' using process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:26$30'.
+  created $adff cell `$procdff$123' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\fll_2\N=s32'00000000000000000000000000001010.\locked' using process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:26$30'.
+  created $adff cell `$procdff$124' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\fll_2\N=s32'00000000000000000000000000001010.\tmp' using process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:26$30'.
+  created $adff cell `$procdff$125' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\fll_2\N=s32'00000000000000000000000000001010.\counter_reset' using process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:26$30'.
+  created $adff cell `$procdff$126' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\fll_2\N=s32'00000000000000000000000000001010.\corner_tmp' using process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:26$30'.
+  created $dff cell `$procdff$129' with positive edge clock.
+Creating register for signal `$paramod\bufferreg\N=s32'00000000000000000000000000001010.\tmp' using process `$paramod\bufferreg\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/bufferreg.v:11$27'.
+  created $adff cell `$procdff$130' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\fll_counter\N=s32'00000000000000000000000000001010.\count' using process `$paramod\fll_counter\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_counter.v:11$49'.
+  created $adff cell `$procdff$131' with positive edge clock and positive level reset.
+
+10.2.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+10.2.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:20$45'.
+Removing empty process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:19$44'.
+Removing empty process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:16$43'.
+Found and cleaned up 6 empty switches in `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:26$30'.
+Removing empty process `$paramod\fll_2\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_2.v:26$30'.
+Removing empty process `$paramod\bufferreg\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/bufferreg.v:9$28'.
+Removing empty process `$paramod\bufferreg\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/bufferreg.v:11$27'.
+Removing empty process `$paramod\fll_counter\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_counter.v:9$51'.
+Removing empty process `$paramod\fll_counter\N=s32'00000000000000000000000000001010.$proc$/foss/designs/ma2022/fll_2/src/fll_counter.v:11$49'.
+Cleaned up 6 empty switches.
+
+10.2.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\fll_2\N=s32'00000000000000000000000000001010.
+Optimizing module $paramod\mux\N=s32'00000000000000000000000000001010.
+Optimizing module $paramod\bufferreg\N=s32'00000000000000000000000000001010.
+Optimizing module $paramod\fll_counter\N=s32'00000000000000000000000000001010.
+Optimizing module fll_wrapper_2.
+
+10.3. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\fll_2\N=s32'00000000000000000000000000001010.
+Deleting now unused module $paramod\mux\N=s32'00000000000000000000000000001010.
+Deleting now unused module $paramod\bufferreg\N=s32'00000000000000000000000000001010.
+Deleting now unused module $paramod\fll_counter\N=s32'00000000000000000000000000001010.
+<suppressed ~5 debug messages>
+
+10.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 0 unused cells and 45 unused wires.
+<suppressed ~1 debug messages>
+
+10.6. Executing CHECK pass (checking for obvious problems).
+Checking module fll_wrapper_2...
+Found and reported 0 problems.
+
+10.7. Executing OPT pass (performing simple optimizations).
+
+10.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\fll_core.$procmux$57.
+    dead port 1/2 on $mux $flatten\fll_core.$procmux$60.
+    dead port 2/2 on $mux $flatten\fll_core.$procmux$62.
+    dead port 1/2 on $mux $flatten\fll_core.$procmux$69.
+    dead port 2/2 on $mux $flatten\fll_core.$procmux$71.
+    dead port 2/2 on $mux $flatten\fll_core.$procmux$78.
+    dead port 2/2 on $mux $flatten\fll_core.$procmux$80.
+    dead port 2/2 on $mux $flatten\fll_core.$procmux$86.
+Removed 8 multiplexer ports.
+<suppressed ~6 debug messages>
+
+10.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 0 changes.
+
+10.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+10.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 0 unused cells and 9 unused wires.
+<suppressed ~1 debug messages>
+
+10.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.7.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 0 changes.
+
+10.7.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.7.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+
+10.7.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.7.16. Finished OPT passes. (There is nothing left to do.)
+
+10.8. Executing FSM pass (extract and optimize FSM).
+
+10.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking fll_wrapper_2.fll_core.corner_tmp as FSM state register:
+    Register is connected to module port.
+    Users of register don't seem to benefit from recoding.
+    Register has an initialization value.
+
+10.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+10.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+10.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+
+10.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+10.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+10.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+10.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+10.9. Executing OPT pass (performing simple optimizations).
+
+10.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 0 changes.
+
+10.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\fll_core.$procdff$129 ($dff) from module fll_wrapper_2 (D = $flatten\fll_core.$3\corner_tmp[2:0], Q = \fll_core.corner_tmp).
+Adding EN signal on $flatten\fll_core.$procdff$125 ($adff) from module fll_wrapper_2 (D = $flatten\fll_core.$procmux$108_Y, Q = \fll_core.tmp).
+Adding EN signal on $flatten\fll_core.$procdff$124 ($adff) from module fll_wrapper_2 (D = $flatten\fll_core.$procmux$119_Y, Q = \fll_core.locked).
+
+10.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 4 unused cells and 4 unused wires.
+<suppressed ~5 debug messages>
+
+10.9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+<suppressed ~3 debug messages>
+
+10.9.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.9.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.9.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 0 changes.
+
+10.9.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+10.9.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.9.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+10.9.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.9.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.9.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.9.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 0 changes.
+
+10.9.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.9.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.9.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+
+10.9.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.9.23. Finished OPT passes. (There is nothing left to do.)
+
+10.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 3) from port B of cell fll_wrapper_2.$auto$opt_dff.cc:198:make_patterns_logic$134 ($ne).
+Removed cell fll_wrapper_2.$flatten\fll_core.$procmux$113 ($mux).
+Removed cell fll_wrapper_2.$flatten\fll_core.$procmux$106 ($mux).
+Removed cell fll_wrapper_2.$flatten\fll_core.$procmux$102 ($mux).
+Removed cell fll_wrapper_2.$flatten\fll_core.$procmux$100 ($mux).
+Removed top 1 bits (of 3) from port B of cell fll_wrapper_2.$auto$opt_dff.cc:198:make_patterns_logic$145 ($ne).
+Removed cell fll_wrapper_2.$flatten\fll_core.$procmux$76 ($mux).
+Removed cell fll_wrapper_2.$flatten\fll_core.$procmux$66 ($mux).
+Removed cell fll_wrapper_2.$flatten\fll_core.$procmux$55 ($mux).
+Removed top 31 bits (of 32) from port B of cell fll_wrapper_2.$flatten\fll_core.$gt$/foss/designs/ma2022/fll_2/src/fll_2.v:48$38 ($gt).
+Removed top 21 bits (of 32) from port Y of cell fll_wrapper_2.$flatten\fll_core.$sub$/foss/designs/ma2022/fll_2/src/fll_2.v:48$37 ($sub).
+Removed top 22 bits (of 32) from port B of cell fll_wrapper_2.$flatten\fll_core.$le$/foss/designs/ma2022/fll_2/src/fll_2.v:42$34 ($le).
+Removed top 21 bits (of 32) from port Y of cell fll_wrapper_2.$flatten\fll_core.$add$/foss/designs/ma2022/fll_2/src/fll_2.v:42$33 ($add).
+Removed top 21 bits (of 32) from wire fll_wrapper_2.$flatten\fll_core.$add$/foss/designs/ma2022/fll_2/src/fll_2.v:42$33_Y.
+
+10.11. Executing PEEPOPT pass (run peephole optimizers).
+
+10.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 0 unused cells and 8 unused wires.
+<suppressed ~1 debug messages>
+
+10.13. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module fll_wrapper_2:
+  creating $macc model for $flatten\fll_core.$add$/foss/designs/ma2022/fll_2/src/fll_2.v:42$33 ($add).
+  creating $macc model for $flatten\fll_core.$add$/foss/designs/ma2022/fll_2/src/fll_2.v:43$35 ($add).
+  creating $macc model for $flatten\fll_core.$sub$/foss/designs/ma2022/fll_2/src/fll_2.v:48$37 ($sub).
+  creating $macc model for $flatten\fll_core.$sub$/foss/designs/ma2022/fll_2/src/fll_2.v:49$39 ($sub).
+  creating $macc model for $flatten\fll_core.\counter1.$add$/foss/designs/ma2022/fll_2/src/fll_counter.v:16$50 ($add).
+  creating $macc model for $flatten\fll_core.\counter2.$add$/foss/designs/ma2022/fll_2/src/fll_counter.v:16$50 ($add).
+  creating $alu model for $macc $flatten\fll_core.\counter2.$add$/foss/designs/ma2022/fll_2/src/fll_counter.v:16$50.
+  creating $alu model for $macc $flatten\fll_core.\counter1.$add$/foss/designs/ma2022/fll_2/src/fll_counter.v:16$50.
+  creating $alu model for $macc $flatten\fll_core.$sub$/foss/designs/ma2022/fll_2/src/fll_2.v:49$39.
+  creating $alu model for $macc $flatten\fll_core.$sub$/foss/designs/ma2022/fll_2/src/fll_2.v:48$37.
+  creating $alu model for $macc $flatten\fll_core.$add$/foss/designs/ma2022/fll_2/src/fll_2.v:43$35.
+  creating $alu model for $macc $flatten\fll_core.$add$/foss/designs/ma2022/fll_2/src/fll_2.v:42$33.
+  creating $alu model for $flatten\fll_core.$ge$/foss/designs/ma2022/fll_2/src/fll_2.v:52$40 ($ge): new $alu
+  creating $alu model for $flatten\fll_core.$gt$/foss/designs/ma2022/fll_2/src/fll_2.v:40$32 ($gt): new $alu
+  creating $alu model for $flatten\fll_core.$gt$/foss/designs/ma2022/fll_2/src/fll_2.v:48$38 ($gt): new $alu
+  creating $alu model for $flatten\fll_core.$le$/foss/designs/ma2022/fll_2/src/fll_2.v:42$34 ($le): new $alu
+  creating $alu model for $flatten\fll_core.$le$/foss/designs/ma2022/fll_2/src/fll_2.v:52$41 ($le): merged with $flatten\fll_core.$gt$/foss/designs/ma2022/fll_2/src/fll_2.v:40$32.
+  creating $alu model for $flatten\fll_core.$lt$/foss/designs/ma2022/fll_2/src/fll_2.v:46$36 ($lt): merged with $flatten\fll_core.$ge$/foss/designs/ma2022/fll_2/src/fll_2.v:52$40.
+  creating $alu cell for $flatten\fll_core.$le$/foss/designs/ma2022/fll_2/src/fll_2.v:42$34: $auto$alumacc.cc:485:replace_alu$162
+  creating $alu cell for $flatten\fll_core.$gt$/foss/designs/ma2022/fll_2/src/fll_2.v:48$38: $auto$alumacc.cc:485:replace_alu$175
+  creating $alu cell for $flatten\fll_core.$gt$/foss/designs/ma2022/fll_2/src/fll_2.v:40$32, $flatten\fll_core.$le$/foss/designs/ma2022/fll_2/src/fll_2.v:52$41: $auto$alumacc.cc:485:replace_alu$180
+  creating $alu cell for $flatten\fll_core.$ge$/foss/designs/ma2022/fll_2/src/fll_2.v:52$40, $flatten\fll_core.$lt$/foss/designs/ma2022/fll_2/src/fll_2.v:46$36: $auto$alumacc.cc:485:replace_alu$193
+  creating $alu cell for $flatten\fll_core.$add$/foss/designs/ma2022/fll_2/src/fll_2.v:42$33: $auto$alumacc.cc:485:replace_alu$206
+  creating $alu cell for $flatten\fll_core.$add$/foss/designs/ma2022/fll_2/src/fll_2.v:43$35: $auto$alumacc.cc:485:replace_alu$209
+  creating $alu cell for $flatten\fll_core.$sub$/foss/designs/ma2022/fll_2/src/fll_2.v:48$37: $auto$alumacc.cc:485:replace_alu$212
+  creating $alu cell for $flatten\fll_core.$sub$/foss/designs/ma2022/fll_2/src/fll_2.v:49$39: $auto$alumacc.cc:485:replace_alu$215
+  creating $alu cell for $flatten\fll_core.\counter1.$add$/foss/designs/ma2022/fll_2/src/fll_counter.v:16$50: $auto$alumacc.cc:485:replace_alu$218
+  creating $alu cell for $flatten\fll_core.\counter2.$add$/foss/designs/ma2022/fll_2/src/fll_counter.v:16$50: $auto$alumacc.cc:485:replace_alu$221
+  created 10 $alu and 0 $macc cells.
+
+10.14. Executing SHARE pass (SAT-based resource sharing).
+
+10.15. Executing OPT pass (performing simple optimizations).
+
+10.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+<suppressed ~4 debug messages>
+
+10.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 0 changes.
+
+10.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 0 unused cells and 6 unused wires.
+<suppressed ~1 debug messages>
+
+10.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.15.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.15.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+10.15.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 0 changes.
+
+10.15.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.15.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.15.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+
+10.15.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.15.16. Finished OPT passes. (There is nothing left to do.)
+
+10.16. Executing MEMORY pass.
+
+10.16.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+10.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+10.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+10.16.4. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+10.16.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+
+10.16.6. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+10.16.7. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+10.16.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+
+10.16.9. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+10.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+
+10.18. Executing OPT pass (performing simple optimizations).
+
+10.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+<suppressed ~4 debug messages>
+
+10.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 10 unused cells and 12 unused wires.
+<suppressed ~11 debug messages>
+
+10.18.5. Finished fast OPT passes.
+
+10.19. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10.20. Executing OPT pass (performing simple optimizations).
+
+10.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+10.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+    Consolidated identical input bits for $mux cell $flatten\fll_core.$procmux$84:
+      Old ports: A=3'001, B=3'100, Y=$flatten\fll_core.$3\corner_tmp[2:0]
+      New ports: A=2'01, B=2'10, Y={ $flatten\fll_core.$3\corner_tmp[2:0] [2] $flatten\fll_core.$3\corner_tmp[2:0] [0] }
+      New connections: $flatten\fll_core.$3\corner_tmp[2:0] [1] = 1'0
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 1 changes.
+
+10.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.20.6. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $mux $flatten\fll_core.$procmux$108 in front of them:
+        $auto$alumacc.cc:485:replace_alu$215
+        $auto$alumacc.cc:485:replace_alu$209
+
+10.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 0 unused cells and 6 unused wires.
+<suppressed ~1 debug messages>
+
+10.20.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+<suppressed ~2 debug messages>
+
+10.20.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.20.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+10.20.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+    Consolidated identical input bits for $mux cell $auto$opt_share.cc:241:merge_operators$247:
+      Old ports: A=10'1111111111, B=10'0000000001, Y=$auto$rtlil.cc:2443:Mux$248
+      New ports: A=1'1, B=1'0, Y=$auto$rtlil.cc:2443:Mux$248 [1]
+      New connections: { $auto$rtlil.cc:2443:Mux$248 [9:2] $auto$rtlil.cc:2443:Mux$248 [0] } = { $auto$rtlil.cc:2443:Mux$248 [1] $auto$rtlil.cc:2443:Mux$248 [1] $auto$rtlil.cc:2443:Mux$248 [1] $auto$rtlil.cc:2443:Mux$248 [1] $auto$rtlil.cc:2443:Mux$248 [1] $auto$rtlil.cc:2443:Mux$248 [1] $auto$rtlil.cc:2443:Mux$248 [1] $auto$rtlil.cc:2443:Mux$248 [1] 1'1 }
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 1 changes.
+
+10.20.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.20.14. Executing OPT_SHARE pass.
+
+10.20.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.20.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+10.20.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+<suppressed ~1 debug messages>
+
+10.20.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.20.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+10.20.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 0 changes.
+
+10.20.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+10.20.22. Executing OPT_SHARE pass.
+
+10.20.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.20.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+10.20.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.20.26. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.20.27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+10.20.28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 0 changes.
+
+10.20.29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+10.20.30. Executing OPT_SHARE pass.
+
+10.20.31. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.20.32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+
+10.20.33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.20.34. Finished OPT passes. (There is nothing left to do.)
+
+10.21. Executing TECHMAP pass (map to technology primitives).
+
+10.21.1. Executing Verilog-2005 frontend: /foss/tools/yosys/cfe940a/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/foss/tools/yosys/cfe940a/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+10.21.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$1bb7aebaa32f16dab78ad6c76561e8e43e165fdb\_90_alu for cells of type $alu.
+Using template $paramod$956697fce63908d39d1e4745683af5cf1a798cee\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $logic_and.
+Using template $paramod$484d51534650924b7ed4c69e46eed3a56904771f\_90_alu for cells of type $alu.
+Using template $paramod$754650b284649a026620fc6856e5b6886cbfe794\_90_alu for cells of type $alu.
+Using template $paramod$1e8c376286295ea5767a0416bc3548f868074797\_90_alu for cells of type $alu.
+Using template $paramod$6a42b6fefed750f8a1c58eab59479d960557103c\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000001011 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000010110 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000001010 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~1258 debug messages>
+
+10.22. Executing OPT pass (performing simple optimizations).
+
+10.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+<suppressed ~753 debug messages>
+
+10.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+<suppressed ~216 debug messages>
+Removed a total of 72 cells.
+
+10.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 92 unused cells and 558 unused wires.
+<suppressed ~93 debug messages>
+
+10.22.5. Finished fast OPT passes.
+
+10.23. Executing ABC pass (technology mapping using ABC).
+
+10.23.1. Extracting gate netlist of module `\fll_wrapper_2' to `<abc-temp-dir>/input.blif'..
+Extracted 372 gates and 444 wires to a netlist network with 72 inputs and 47 outputs.
+
+10.23.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+10.23.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:       14
+ABC RESULTS:            ANDNOT cells:      102
+ABC RESULTS:               MUX cells:       11
+ABC RESULTS:              NAND cells:       15
+ABC RESULTS:               NOR cells:       21
+ABC RESULTS:               NOT cells:       11
+ABC RESULTS:                OR cells:       46
+ABC RESULTS:             ORNOT cells:       22
+ABC RESULTS:              XNOR cells:       12
+ABC RESULTS:               XOR cells:       70
+ABC RESULTS:        internal signals:      325
+ABC RESULTS:           input signals:       72
+ABC RESULTS:          output signals:       47
+Removing temp directory.
+
+10.24. Executing OPT pass (performing simple optimizations).
+
+10.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+10.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+<suppressed ~12 debug messages>
+Removed a total of 4 cells.
+
+10.24.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 0 unused cells and 275 unused wires.
+<suppressed ~1 debug messages>
+
+10.24.5. Finished fast OPT passes.
+
+10.25. Executing HIERARCHY pass (managing design hierarchy).
+
+10.25.1. Analyzing design hierarchy..
+Top module:  \fll_wrapper_2
+
+10.25.2. Analyzing design hierarchy..
+Top module:  \fll_wrapper_2
+Removed 0 unused modules.
+
+10.26. Printing statistics.
+
+=== fll_wrapper_2 ===
+
+   Number of wires:                334
+   Number of wire bits:            668
+   Number of public wires:          48
+   Number of public wire bits:     288
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                366
+     $_ANDNOT_                     102
+     $_AND_                         14
+     $_DFFE_PP0P_                   10
+     $_DFFE_PP1P_                    1
+     $_DFFE_PP_                      3
+     $_DFF_PP0_                     31
+     $_DFF_PP1_                      1
+     $_MUX_                         11
+     $_NAND_                        15
+     $_NOR_                         17
+     $_NOT_                         11
+     $_ORNOT_                       22
+     $_OR_                          46
+     $_XNOR_                        12
+     $_XOR_                         70
+
+10.27. Executing CHECK pass (checking for obvious problems).
+Checking module fll_wrapper_2...
+Found and reported 0 problems.
+
+11. Generating Graphviz representation of design.
+Writing dot description to `/foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/post_techmap.dot'.
+Dumping module fll_wrapper_2 to page 1.
+
+12. Executing SHARE pass (SAT-based resource sharing).
+
+13. Executing OPT pass (performing simple optimizations).
+
+13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fll_wrapper_2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fll_wrapper_2.
+Performed a total of 0 changes.
+
+13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fll_wrapper_2'.
+Removed a total of 0 cells.
+
+13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+
+13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fll_wrapper_2.
+
+13.9. Finished OPT passes. (There is nothing left to do.)
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 0 unused cells and 30 unused wires.
+<suppressed ~30 debug messages>
+
+15. Printing statistics.
+
+=== fll_wrapper_2 ===
+
+   Number of wires:                304
+   Number of wire bits:            490
+   Number of public wires:          18
+   Number of public wire bits:     110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                366
+     $_ANDNOT_                     102
+     $_AND_                         14
+     $_DFFE_PP0P_                   10
+     $_DFFE_PP1P_                    1
+     $_DFFE_PP_                      3
+     $_DFF_PP0_                     31
+     $_DFF_PP1_                      1
+     $_MUX_                         11
+     $_NAND_                        15
+     $_NOR_                         17
+     $_NOT_                         11
+     $_ORNOT_                       22
+     $_OR_                          46
+     $_XNOR_                        12
+     $_XOR_                         70
+
+mapping tbuf
+
+16. Executing TECHMAP pass (map to technology primitives).
+
+16.1. Executing Verilog-2005 frontend: /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+16.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+17. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+18. Executing TECHMAP pass (map to technology primitives).
+
+18.1. Executing Verilog-2005 frontend: /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+18.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+19. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+20. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+20.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\fll_wrapper_2':
+  mapped 41 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
+  mapped 2 $_DFF_PN1_ cells to \sky130_fd_sc_hd__dfstp_2 cells.
+  mapped 3 $_DFF_P_ cells to \sky130_fd_sc_hd__dfxtp_2 cells.
+
+21. Printing statistics.
+
+=== fll_wrapper_2 ===
+
+   Number of wires:                361
+   Number of wire bits:            547
+   Number of public wires:          18
+   Number of public wire bits:     110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                423
+     $_ANDNOT_                     102
+     $_AND_                         14
+     $_MUX_                         25
+     $_NAND_                        15
+     $_NOR_                         17
+     $_NOT_                         54
+     $_ORNOT_                       22
+     $_OR_                          46
+     $_XNOR_                        12
+     $_XOR_                         70
+     sky130_fd_sc_hd__dfrtp_2       41
+     sky130_fd_sc_hd__dfstp_2        2
+     sky130_fd_sc_hd__dfxtp_2        3
+
+[INFO]: USING STRATEGY AREA 0
+
+22. Executing ABC pass (technology mapping using ABC).
+
+22.1. Extracting gate netlist of module `\fll_wrapper_2' to `/tmp/yosys-abc-FzphSK/input.blif'..
+Extracted 377 gates and 455 wires to a netlist network with 77 inputs and 88 outputs.
+
+22.1.1. Executing ABC.
+Running ABC command: /foss/tools/yosys/cfe940a/bin/yosys-abc -s -f /tmp/yosys-abc-FzphSK/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-FzphSK/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-FzphSK/input.blif 
+ABC: + read_lib -w /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.09 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130A_merged" from "/foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.15 sec
+ABC: Memory =    7.77 MB. Time =     0.15 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/synthesis.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2".
+ABC: Setting output load to be 33.442001.
+ABC: + read_constr /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.22.32/tmp/synthesis/synthesis.sdc 
+ABC: + fx 
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 40000 -M 5 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + amap -m -Q 0.1 -F 20 -A 20 -C 5000 
+ABC: + retime -D -D 40000 
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &dch 
+ABC: + &nf 
+ABC: + &put 
+ABC: + buffer -N 5 -S 750.0 
+ABC: + upsize -D 40000 
+ABC: Current delay (3074.48 ps) does not exceed the target delay (40000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 40000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =    284 ( 42.3 %)   Cap = 13.4 ff (  7.6 %)   Area =     2056.97 ( 57.4 %)   Delay =  3196.46 ps  (  9.2 %)               
+ABC: Path  0 --      16 : 0    3 pi                       A =   0.00  Df =  21.4  -12.3 ps  S =  35.3 ps  Cin =  0.0 ff  Cout =   6.1 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     219 : 2    2 sky130_fd_sc_hd__or2b_2  A =   8.76  Df = 311.3 -154.6 ps  S =  58.5 ps  Cin =  1.6 ff  Cout =   4.8 ff  Cmax = 312.2 ff  G =  297  
+ABC: Path  2 --     234 : 4    1 sky130_fd_sc_hd__a22o_2  A =  10.01  Df = 857.6 -206.7 ps  S =  38.1 ps  Cin =  2.3 ff  Cout =   2.4 ff  Cmax = 301.2 ff  G =  100  
+ABC: Path  3 --     238 : 4    5 sky130_fd_sc_hd__a31o_2  A =   8.76  Df =1107.9 -279.3 ps  S =  85.9 ps  Cin =  2.4 ff  Cout =  12.0 ff  Cmax = 271.9 ff  G =  485  
+ABC: Path  4 --     247 : 1    5 sky130_fd_sc_hd__buf_1   A =   3.75  Df =1292.2 -192.8 ps  S = 303.1 ps  Cin =  2.1 ff  Cout =  25.2 ff  Cmax = 130.0 ff  G = 1165  
+ABC: Path  5 --     259 : 2    3 sky130_fd_sc_hd__nand2_2 A =   6.26  Df =1422.7 -203.5 ps  S =  85.4 ps  Cin =  4.4 ff  Cout =  11.5 ff  Cmax = 295.7 ff  G =  252  
+ABC: Path  6 --     261 : 2    3 sky130_fd_sc_hd__nand2_2 A =   6.26  Df =1505.3   -8.2 ps  S =  99.6 ps  Cin =  4.4 ff  Cout =  15.7 ff  Cmax = 295.7 ff  G =  337  
+ABC: Path  7 --     263 : 5    4 sky130_fd_sc_hd__o311a_2 A =  11.26  Df =1884.3  -16.4 ps  S =  76.9 ps  Cin =  2.4 ff  Cout =  10.3 ff  Cmax = 293.9 ff  G =  420  
+ABC: Path  8 --     277 : 5    2 sky130_fd_sc_hd__o41a_2  A =  12.51  Df =2398.6 -326.5 ps  S =  92.3 ps  Cin =  2.4 ff  Cout =  13.2 ff  Cmax = 305.8 ff  G =  534  
+ABC: Path  9 --     278 : 3    1 sky130_fd_sc_hd__o21ai_2 A =   8.76  Df =2563.4 -421.6 ps  S = 148.8 ps  Cin =  4.5 ff  Cout =   9.0 ff  Cmax = 139.2 ff  G =  190  
+ABC: Path 10 --     280 : 2    1 sky130_fd_sc_hd__xnor2_2 A =  16.27  Df =2726.7 -457.9 ps  S =  88.8 ps  Cin =  8.5 ff  Cout =   1.8 ff  Cmax = 121.8 ff  G =   20  
+ABC: Path 11 --     291 : 3    1 sky130_fd_sc_hd__mux2_2  A =  11.26  Df =2977.6 -273.5 ps  S =  45.5 ps  Cin =  2.3 ff  Cout =   2.2 ff  Cmax = 297.6 ff  G =   92  
+ABC: Path 12 --     292 : 1    1 sky130_fd_sc_hd__buf_1   A =   3.75  Df =3196.5 -170.9 ps  S = 396.5 ps  Cin =  2.1 ff  Cout =  33.4 ff  Cmax = 130.0 ff  G = 1590  
+ABC: Start-point = pi15 (\fll_core.counter1.count [7]).  End-point = po1 ($auto$rtlil.cc:2515:MuxGate$2574).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =   77/   88  lat =    0  nd =   284  edge =    585  area =2056.85  delay =14.00  lev = 14
+ABC: + write_blif /tmp/yosys-abc-FzphSK/output.blif 
+
+22.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21bo_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__and4b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__buf_1 cells:       49
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:       71
+ABC RESULTS:   sky130_fd_sc_hd__mux2_2 cells:       23
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:       21
+ABC RESULTS:   sky130_fd_sc_hd__nor2b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o211a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o221a_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o311a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o41a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__or2b_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__or4b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:        8
+ABC RESULTS:        internal signals:      290
+ABC RESULTS:           input signals:       77
+ABC RESULTS:          output signals:       88
+Removing temp directory.
+
+23. Executing SETUNDEF pass (replace undef values with defined constants).
+
+24. Executing HILOMAP pass (mapping to constant drivers).
+
+25. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+26. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fll_wrapper_2..
+Removed 1 unused cells and 525 unused wires.
+<suppressed ~2 debug messages>
+
+27. Executing INSBUF pass (insert buffer cells for connected wires).
+Added fll_wrapper_2.$auto$insbuf.cc:79:execute$2892: \buffer_val [0] -> \dac [0]
+Added fll_wrapper_2.$auto$insbuf.cc:79:execute$2893: \buffer_val [1] -> \dac [1]
+Added fll_wrapper_2.$auto$insbuf.cc:79:execute$2894: \buffer_val [2] -> \dac [2]
+Added fll_wrapper_2.$auto$insbuf.cc:79:execute$2895: \buffer_val [3] -> \dac [3]
+Added fll_wrapper_2.$auto$insbuf.cc:79:execute$2896: \buffer_val [4] -> \dac [4]
+Added fll_wrapper_2.$auto$insbuf.cc:79:execute$2897: \buffer_val [5] -> \dac [5]
+Added fll_wrapper_2.$auto$insbuf.cc:79:execute$2898: \buffer_val [6] -> \dac [6]
+Added fll_wrapper_2.$auto$insbuf.cc:79:execute$2899: \buffer_val [7] -> \dac [7]
+Added fll_wrapper_2.$auto$insbuf.cc:79:execute$2900: \buffer_val [8] -> \dac [8]
+Added fll_wrapper_2.$auto$insbuf.cc:79:execute$2901: \buffer_val [9] -> \dac [9]
+
+28. Executing CHECK pass (checking for obvious problems).
+Checking module fll_wrapper_2...
+Warning: Wire fll_wrapper_2.\lock is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [9] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [8] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [7] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [6] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [5] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [4] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [3] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [2] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [1] is used but has no driver.
+Warning: Wire fll_wrapper_2.\dac [0] is used but has no driver.
+Warning: Wire fll_wrapper_2.\corner [2] is used but has no driver.
+Warning: Wire fll_wrapper_2.\corner [1] is used but has no driver.
+Warning: Wire fll_wrapper_2.\corner [0] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [9] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [8] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [7] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [6] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [5] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [4] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [3] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [2] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [1] is used but has no driver.
+Warning: Wire fll_wrapper_2.\buffer_val [0] is used but has no driver.
+Found and reported 24 problems.
+
+29. Printing statistics.
+
+=== fll_wrapper_2 ===
+
+   Number of wires:                328
+   Number of wire bits:            384
+   Number of public wires:          54
+   Number of public wire bits:     110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                340
+     sky130_fd_sc_hd__a211o_2        1
+     sky130_fd_sc_hd__a21bo_2        1
+     sky130_fd_sc_hd__a21boi_2       1
+     sky130_fd_sc_hd__a21o_2         4
+     sky130_fd_sc_hd__a21oi_2        9
+     sky130_fd_sc_hd__a221o_2        2
+     sky130_fd_sc_hd__a22o_2        10
+     sky130_fd_sc_hd__a2bb2o_2       1
+     sky130_fd_sc_hd__a31o_2         1
+     sky130_fd_sc_hd__and2_2         8
+     sky130_fd_sc_hd__and2b_2        2
+     sky130_fd_sc_hd__and3_2         7
+     sky130_fd_sc_hd__and4_2         4
+     sky130_fd_sc_hd__and4b_2        1
+     sky130_fd_sc_hd__buf_1         49
+     sky130_fd_sc_hd__buf_2         10
+     sky130_fd_sc_hd__dfrtp_2       41
+     sky130_fd_sc_hd__dfstp_2        2
+     sky130_fd_sc_hd__dfxtp_2        3
+     sky130_fd_sc_hd__inv_2         71
+     sky130_fd_sc_hd__mux2_2        23
+     sky130_fd_sc_hd__nand2_2        8
+     sky130_fd_sc_hd__nor2_2        21
+     sky130_fd_sc_hd__nor2b_2        1
+     sky130_fd_sc_hd__nor3_2         2
+     sky130_fd_sc_hd__o211a_2        1
+     sky130_fd_sc_hd__o21a_2         3
+     sky130_fd_sc_hd__o21ai_2        3
+     sky130_fd_sc_hd__o21ba_2        1
+     sky130_fd_sc_hd__o221a_2        3
+     sky130_fd_sc_hd__o22a_2         9
+     sky130_fd_sc_hd__o2bb2a_2       1
+     sky130_fd_sc_hd__o311a_2        1
+     sky130_fd_sc_hd__o41a_2         1
+     sky130_fd_sc_hd__or2_2          7
+     sky130_fd_sc_hd__or2b_2         3
+     sky130_fd_sc_hd__or3_2          2
+     sky130_fd_sc_hd__or4b_2         1
+     sky130_fd_sc_hd__xnor2_2       13
+     sky130_fd_sc_hd__xor2_2         8
+
+   Chip area for module '\fll_wrapper_2': 3300.665600
+
+30. Executing Verilog backend.
+Dumping module `\fll_wrapper_2'.
+
+Warnings: 24 unique messages, 24 total
+End of script. Logfile hash: a70b4234cc, CPU: user 2.13s system 0.02s, MEM: 41.94 MB peak
+Yosys 0.12+45 (git sha1 cfe940a98, gcc 9.2.1 -fPIC -Os)
+Time spent: 31% 2x abc (0 sec), 22% 4x stat (0 sec), ...

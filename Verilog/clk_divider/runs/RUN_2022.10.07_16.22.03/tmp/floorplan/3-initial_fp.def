@@ -1,0 +1,39 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN clk_divider ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 14575 25295 ) ;
+ROW ROW_0 unithd 5520 10880 N DO 7 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 32 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 74 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 43 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 74 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 32 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 55 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 21 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 37 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 16 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 27 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 4 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 7 STEP 3400 LAYER met5 ;
+COMPONENTS 1 ;
+    - _0_ sky130_fd_sc_hd__conb_1 ;
+END COMPONENTS
+PINS 6 ;
+    - clk_in + NET clk_in + DIRECTION INPUT + USE SIGNAL ;
+    - clk_out + NET clk_out + DIRECTION OUTPUT + USE SIGNAL ;
+    - divider[0] + NET divider[0] + DIRECTION INPUT + USE SIGNAL ;
+    - divider[1] + NET divider[1] + DIRECTION INPUT + USE SIGNAL ;
+    - divider[2] + NET divider[2] + DIRECTION INPUT + USE SIGNAL ;
+    - divider[3] + NET divider[3] + DIRECTION INPUT + USE SIGNAL ;
+END PINS
+NETS 6 ;
+    - clk_in ( PIN clk_in ) + USE SIGNAL ;
+    - clk_out ( PIN clk_out ) ( _0_ LO ) + USE SIGNAL ;
+    - divider[0] ( PIN divider[0] ) + USE SIGNAL ;
+    - divider[1] ( PIN divider[1] ) + USE SIGNAL ;
+    - divider[2] ( PIN divider[2] ) + USE SIGNAL ;
+    - divider[3] ( PIN divider[3] ) + USE SIGNAL ;
+END NETS
+END DESIGN

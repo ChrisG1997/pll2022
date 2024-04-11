@@ -1,0 +1,9 @@
+
+27. Executing CHECK pass (checking for obvious problems).
+Checking module fll_wrapper_2...
+Warning: Wire fll_wrapper_2.\pwm is used but has no driver.
+Warning: Wire fll_wrapper_2.\lock is used but has no driver.
+Warning: Wire fll_wrapper_2.\corner [2] is used but has no driver.
+Warning: Wire fll_wrapper_2.\corner [1] is used but has no driver.
+Warning: Wire fll_wrapper_2.\corner [0] is used but has no driver.
+Found and reported 5 problems.

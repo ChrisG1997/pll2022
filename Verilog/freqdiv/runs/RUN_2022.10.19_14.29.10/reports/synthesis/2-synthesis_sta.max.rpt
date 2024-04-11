@@ -1,0 +1,30 @@
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+Startpoint: _090_ (rising edge-triggered flip-flop)
+Endpoint: clock_out (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.27    0.00    0.00 ^ _090_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.20    0.50    0.50 ^ _090_/Q (sky130_fd_sc_hd__dfxtp_2)
+     1    0.03                           clock_out (net)
+                  0.20    0.00    0.50 ^ clock_out (out)
+                                  0.50   data arrival time
+
+                  0.00    0.50    0.50   clock clk (rise edge)
+                          0.00    0.50   clock network delay (ideal)
+                         -0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -0.10    0.15   output external delay
+                                  0.15   data required time
+-----------------------------------------------------------------------------
+                                  0.15   data required time
+                                 -0.50   data arrival time
+-----------------------------------------------------------------------------
+                                 -0.35   slack (VIOLATED)
+
+

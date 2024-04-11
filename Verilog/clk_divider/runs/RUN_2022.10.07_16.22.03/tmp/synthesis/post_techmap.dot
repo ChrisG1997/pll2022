@@ -1,0 +1,31 @@
+digraph "clk_divider" {
+label="clk_divider";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="clk_in", color="black", fontcolor="black" ];
+n2 [ shape=diamond, label="clk_in_div", color="black", fontcolor="black" ];
+n3 [ shape=diamond, label="clk_in_passthru", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="clk_out", color="black", fontcolor="black" ];
+n5 [ shape=diamond, label="counter", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="divider", color="black", fontcolor="black" ];
+v0 [ label="1'0" ];
+x1 [shape=box, style=rounded, label="BUF"];
+v2 [ label="1'0" ];
+x3 [shape=box, style=rounded, label="BUF"];
+v4 [ label="1'0" ];
+x5 [shape=box, style=rounded, label="BUF"];
+v6 [ label="1'0" ];
+x7 [shape=box, style=rounded, label="BUF"];
+v8 [ label="4'0000" ];
+x9 [shape=box, style=rounded, label="BUF"];
+x1:e:e -> n1:w [color="black", label=""];
+x3:e:e -> n2:w [color="black", label=""];
+x5:e:e -> n3:w [color="black", label=""];
+x7:e:e -> n4:w [color="black", label=""];
+x9:e:e -> n5:w [color="black", style="setlinewidth(3)", label=""];
+v0:e -> x1:w:w [color="black", label=""];
+v2:e -> x3:w:w [color="black", label=""];
+v4:e -> x5:w:w [color="black", label=""];
+v6:e -> x7:w:w [color="black", label=""];
+v8:e -> x9:w:w [color="black", style="setlinewidth(3)", label=""];
+}

@@ -1,0 +1,20 @@
+OpenROAD v2.0-5460-g127815b81 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef at line 930.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef
+Reading netlist...
+[INFO IFP-0001] Added 67 rows of 396 sites.
+[INFO IFP-0030] Inserted 0 tiecells using sky130_fd_sc_hd__conb_1/LO.
+[INFO IFP-0030] Inserted 0 tiecells using sky130_fd_sc_hd__conb_1/HI.
+[INFO] Extracting DIE_AREA and CORE_AREA from the floorplan
+[INFO] Floorplanned on a die area of 0.0 0.0 193.625 204.345 (microns). Saving to /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/floorplan/3-initial_fp_die_area.rpt.
+[INFO] Floorplanned on a core area of 5.52 10.88 187.68 193.12 (microns). Saving to /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/floorplan/3-initial_fp_core_area.rpt.
+[WARNING] Did not save OpenROAD database!

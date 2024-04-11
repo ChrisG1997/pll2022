@@ -1,0 +1,152 @@
+Sun Mar 12 07:43:53 UTC 2023 - Executing "openroad -exit -no_init -python /foss/tools/openlane/2022.11/scripts/odbpy/lefutil.py get_metal_layers -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/layers.list /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Sun Mar 12 07:43:54 UTC 2023 - Executing "/foss/tools/openlane/2022.11/scripts/mergeLef.py -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef -i /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Sun Mar 12 07:43:54 UTC 2023 - Executing "/foss/tools/openlane/2022.11/scripts/mergeLef.py -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.min.lef -i /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Sun Mar 12 07:43:54 UTC 2023 - Executing "/foss/tools/openlane/2022.11/scripts/mergeLef.py -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.max.lef -i /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Sun Mar 12 07:43:54 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/mergeLib.py --output /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/synthesis/merged.lib --name sky130A_merged /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Sun Mar 12 07:43:54 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/libtrim.py --cell-file /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/synthesis/trimmed.lib.exclude.list --output /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/synthesis/trimmed.lib /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/synthesis/merged.lib"
+
+Sun Mar 12 07:43:55 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/libtrim.py --cell-file /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/cts/cts.lib.exclude.list --output /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/cts/cts.lib /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Sun Mar 12 07:43:55 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/new_tracks.py -i /foss/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/routing/config.tracks"
+
+Sun Mar 12 07:43:55 UTC 2023 - Executing "echo {OpenLane a0b19fa68b79eff3e29b674106b06d20aab637f1} > /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/OPENLANE_VERSION"
+
+Sun Mar 12 07:43:55 UTC 2023 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Sun Mar 12 07:43:55 UTC 2023 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/synthesis/trimmed.lib > /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/synthesis/1-trimmed.no_pg.lib"
+
+Sun Mar 12 07:43:55 UTC 2023 - Executing "yosys -c /foss/tools/openlane/2022.11/scripts/yosys/synth.tcl -l /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Sun Mar 12 07:43:58 UTC 2023 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/wrapper\/runs\/RUN_2023.03.12_07.43.52\/results\/synthesis\/wrapper.v/} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/config.tcl"
+
+Sun Mar 12 07:43:58 UTC 2023 - Executing "sed -i /defparam/d /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/synthesis/wrapper.v"
+
+Sun Mar 12 07:43:58 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/sta.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/synthesis/2-sta.log"
+
+Sun Mar 12 07:43:59 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/floorplan.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/floorplan/3-initial_fp.log"
+
+Sun Mar 12 07:44:00 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/floorplan.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/floorplan/3-initial_fp.log"
+
+Sun Mar 12 07:44:00 UTC 2023 - Executing "openroad -exit -no_init -python /foss/tools/openlane/2022.11/scripts/odbpy/defutil.py extract_core_dims --output-data /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/dimensions.txt --input-lef /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/floorplan/3-initial_fp.def"
+
+Sun Mar 12 07:44:01 UTC 2023 - Executing "openroad -exit -no_init -python /foss/tools/openlane/2022.11/scripts/odbpy/io_place.py --config /foss/designs/ma2022/wrapper/pin_order.cfg --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension -1 --ver-extension -1 --length 4 --unmatched-error --input-lef /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef --output-def /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/floorplan/4-io.def --output /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/floorplan/4-io.odb /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/floorplan/3-initial_fp.odb |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/floorplan/4-place_io.log"
+
+Sun Mar 12 07:44:01 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/tapcell.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/floorplan/5-tap.log"
+
+Sun Mar 12 07:44:02 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/pdn.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/floorplan/6-pdn.log"
+
+Sun Mar 12 07:44:03 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/gpl.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/placement/7-global.log"
+
+Sun Mar 12 07:44:07 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/resizer.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/placement/8-resizer.log"
+
+Sun Mar 12 07:44:09 UTC 2023 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/wrapper\/runs\/RUN_2023.03.12_07.43.52\/tmp\/placement\/8-resizer.nl.v/} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/config.tcl"
+
+Sun Mar 12 07:44:09 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/dpl.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/placement/9-detailed.log"
+
+Sun Mar 12 07:44:09 UTC 2023 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/wrapper\/runs\/RUN_2023.03.12_07.43.52\/results\/placement\/wrapper.nl.v/} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/config.tcl"
+
+Sun Mar 12 07:44:10 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/cts.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/cts/10-cts.log"
+
+Sun Mar 12 07:44:47 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/resizer_timing.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/cts/11-resizer.log"
+
+Sun Mar 12 07:44:48 UTC 2023 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/wrapper\/runs\/RUN_2023.03.12_07.43.52\/tmp\/cts\/11-wrapper.resized.nl.v/} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/config.tcl"
+
+Sun Mar 12 07:44:48 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/resizer_routing_timing.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/routing/12-resizer.log"
+
+Sun Mar 12 07:44:50 UTC 2023 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/wrapper\/runs\/RUN_2023.03.12_07.43.52\/tmp\/12-wrapper.nl.v/} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/config.tcl"
+
+Sun Mar 12 07:44:50 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/dpl.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/routing/13-diode_legalization.log"
+
+Sun Mar 12 07:44:51 UTC 2023 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/wrapper\/runs\/RUN_2023.03.12_07.43.52\/tmp\/routing\/diode.nl.v/} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/config.tcl"
+
+Sun Mar 12 07:44:51 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/groute.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/routing/14-global.log"
+
+Sun Mar 12 07:44:53 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/write_views.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/routing/14-global_write_netlist.log"
+
+Sun Mar 12 07:44:54 UTC 2023 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/wrapper\/runs\/RUN_2023.03.12_07.43.52\/tmp\/routing\/global.nl.v/} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/config.tcl"
+
+Sun Mar 12 07:44:54 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/fill.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/routing/16-fill.log"
+
+Sun Mar 12 07:44:55 UTC 2023 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/wrapper\/runs\/RUN_2023.03.12_07.43.52\/tmp\/routing\/16-fill.nl.v/} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/config.tcl"
+
+Sun Mar 12 07:44:55 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/droute.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/routing/17-detailed.log"
+
+Sun Mar 12 07:45:33 UTC 2023 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/wrapper\/runs\/RUN_2023.03.12_07.43.52\/results\/routing\/wrapper.nl.v/} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/config.tcl"
+
+Sun Mar 12 07:45:33 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/drc_rosetta.py tr to_klayout -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/routing/drt.klayout.xml --design-name wrapper /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/routing/drt.drc"
+
+Sun Mar 12 07:45:33 UTC 2023 - Executing "openroad -exit -no_init -python /foss/tools/openlane/2022.11/scripts/odbpy/wire_lengths.py --report-out /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/routing/18-wire_lengths.csv --input-lef /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef --output-def /dev/null --output /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/routing/wrapper.odb /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/routing/wrapper.odb |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/routing/18-wire_lengths.log"
+
+Sun Mar 12 07:45:34 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/rcx.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/19-parasitics_extraction.min.log"
+
+Sun Mar 12 07:45:35 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/sta_multi_corner.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/20-rcx_mcsta.min.log"
+
+Sun Mar 12 07:45:40 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/rcx.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/21-parasitics_extraction.max.log"
+
+Sun Mar 12 07:45:42 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/sta_multi_corner.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/22-rcx_mcsta.max.log"
+
+Sun Mar 12 07:45:48 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/rcx.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/23-parasitics_extraction.nom.log"
+
+Sun Mar 12 07:45:50 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/sta_multi_corner.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/24-rcx_mcsta.nom.log"
+
+Sun Mar 12 07:45:56 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/sta.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/25-rcx_sta.log"
+
+Sun Mar 12 07:45:57 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/irdrop.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/26-irdrop.log"
+
+Sun Mar 12 07:45:58 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /foss/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.11/scripts/magic/def/mag_gds.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/27-gdsii.log"
+
+Sun Mar 12 07:45:59 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /foss/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.11/scripts/magic/gds/mag_with_pointers.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/27-gds_ptrs.log"
+
+Sun Mar 12 07:46:00 UTC 2023 - Executing "sed -i -n {/^<< properties >>/,/^<< end >>/p} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/signoff/gds_ptrs.mag"
+
+Sun Mar 12 07:46:00 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /foss/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.11/scripts/magic/mag/lef.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/27-lef.log"
+
+Sun Mar 12 07:46:02 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /foss/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.11/scripts/magic/lef/maglef.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/27-maglef.log"
+
+Sun Mar 12 07:46:03 UTC 2023 - Executing "klayout -b -rm /foss/tools/openlane/2022.11/scripts/klayout/def2gds.py -rd out_gds=/foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/signoff/wrapper.klayout.gds -rd tech_file=/foss/pdks/sky130A/libs.tech/klayout/tech/sky130A.lyt -rd design_name=wrapper -rd in_def=/foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/routing/wrapper.def -rd {in_gds=/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds } -rd config_file= -rd seal_gds= -rd lef_file=/foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/28-gdsii-klayout.log"
+
+Sun Mar 12 07:46:05 UTC 2023 - Executing "bash /foss/tools/openlane/2022.11/scripts/klayout/xor.sh /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/signoff/wrapper.gds /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/signoff/wrapper.klayout.gds wrapper /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/wrapper.xor.gds |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/29-xor.log"
+
+Sun Mar 12 07:46:09 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/parse_klayout_xor_log.py -l /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/29-xor.log -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/29-xor.rpt"
+
+Sun Mar 12 07:46:09 UTC 2023 - Executing "bash /foss/tools/openlane/2022.11/scripts/klayout/xor.sh /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/signoff/wrapper.gds /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/signoff/wrapper.klayout.gds wrapper /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/wrapper.xor.xml |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/29-xor.log"
+
+Sun Mar 12 07:46:14 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/parse_klayout_xor_log.py -l /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/29-xor.log -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/29-xor.rpt"
+
+Sun Mar 12 07:46:14 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /foss/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.11/scripts/magic/extract_spice.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/30-spice.log"
+
+Sun Mar 12 07:46:18 UTC 2023 - Executing "openroad -exit -no_init -python /foss/tools/openlane/2022.11/scripts/odbpy/power_utils.py write_powered_def --output /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/signoff/30-wrapper.p.def --input-lef /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef --power-port vdd --ground-port vss --powered-netlist {} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/routing/wrapper.def |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/31-write_powered_def.log"
+
+Sun Mar 12 07:46:18 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/write_views.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/31-write_powered_verilog.log"
+
+Sun Mar 12 07:46:19 UTC 2023 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/wrapper\/runs\/RUN_2023.03.12_07.43.52\/tmp\/signoff\/30-wrapper.nl.v/} /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/config.tcl"
+
+Sun Mar 12 07:46:19 UTC 2023 - Executing "netgen -batch source /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/signoff/33-setup_file.lef.lvs |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/33-lvs.lef.log"
+
+Sun Mar 12 07:46:20 UTC 2023 - Executing "magic -noconsole -dnull -rcfile /foss/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.11/scripts/magic/drc.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/34-drc.log"
+
+Sun Mar 12 07:46:29 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/drc_rosetta.py magic to_tcl -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/drc.tcl /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/drc.rpt"
+
+Sun Mar 12 07:46:29 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/drc_rosetta.py magic to_tr -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/drc.tr /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/drc.rpt"
+
+Sun Mar 12 07:46:29 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/drc_rosetta.py tr to_klayout -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/drc.klayout.xml --design-name wrapper /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/drc.tr"
+
+Sun Mar 12 07:46:29 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/drc_rosetta.py magic to_rdb -o /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/drc.rdb /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/drc.rpt"
+
+Sun Mar 12 07:46:29 UTC 2023 - Executing "openroad -exit /foss/tools/openlane/2022.11/scripts/openroad/antenna_check.tcl |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/35-antenna.log"
+
+Sun Mar 12 07:46:30 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/extract_antenna_violators.py --output /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/35-antenna_violators.rpt /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/35-antenna.log"
+
+Sun Mar 12 07:46:30 UTC 2023 - Executing "awk -v vdd=vdd -v gnd=vss -f /foss/pdks/sky130A/libs.tech/openlane/cvc/power.awk /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/signoff/30-wrapper.nl.v > /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/signoff/wrapper.power"
+
+Sun Mar 12 07:46:30 UTC 2023 - Executing "awk -f /foss/pdks/sky130A/libs.tech/openlane/cvc/cdl.awk /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/signoff/wrapper.lef.spice > /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/signoff/wrapper.cdl"
+
+Sun Mar 12 07:46:30 UTC 2023 - Executing "cvc_rv /foss/pdks/sky130A/libs.tech/openlane/cvc/cvcrc |& tee /dev/null /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/36-erc_screen.log"
+
+Sun Mar 12 07:46:31 UTC 2023 - Executing "python3 /foss/tools/openlane/2022.11/scripts/generate_reports.py -d /foss/designs/ma2022/wrapper --design_name wrapper --tag RUN_2023.03.12_07.43.52 --output_file /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/metrics.csv --man_report /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/manufacturability.rpt --run_path /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52"
+

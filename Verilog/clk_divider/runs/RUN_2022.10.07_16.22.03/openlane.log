@@ -1,0 +1,45 @@
+[INFO]: Current run directory is /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03
+[INFO]: Preparing LEF Files...
+[INFO]: Running Synthesis...
+[INFO]: Running Static Timing Analysis...
+[INFO]: Running Initial Floorplanning...
+[WARNING]: Current core area is too small for a power grid. The power grid will be minimized.
+[INFO]: Setting Core Dimensions...
+[INFO]: Running IO Placement...
+[INFO]: Running Tap/Decap Insertion...
+[INFO]: Power planning with power {VPWR} and ground {VGND}...
+[INFO]: Generating PDN...
+[ERROR]: during executing openroad script /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/pdn.tcl
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+[INFO ODB-0128] Design: clk_divider
+[INFO ODB-0130]     Created 6 pins.
+[INFO ODB-0131]     Created 3 components and 14 component-terminals.
+[INFO ODB-0133]     Created 6 nets and 1 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/results/floorplan/clk_divider.def
+[INFO PDN-0016] Power Delivery Network Generator: Generating PDN
+  config: /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/pdn_cfg.tcl
+[ERROR PDN-0085] Pitch 1.0733333333333335 specified for layer met4 is less than 2 x (width + spacing) (width=1.6, spacing=0.537).
+Error: pdn_cfg.tcl, 39 PDN-0085
+child process exited abnormally
+
+[INFO]: Saving runtime environment...
+[INFO]: Creating reproducible...
+[INFO]: Reproducible packaged: Please tarball and upload ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/openroad_issue_reproducible if you're going to submit an issue.
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: clk_divider
+Run Directory: /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03
+Source not found.
+----------------------------------------
+
+LVS Summary:
+Source: /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/logs/finishing/clk_divider.lvs.lef.log
+Source not found.
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.
+[INFO]: check full report here: /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/reports/final_summary_report.csv
+[INFO]: Saving runtime environment...
+[ERROR]: Flow failed.
+[INFO]: The failure may have been because of the following warnings:

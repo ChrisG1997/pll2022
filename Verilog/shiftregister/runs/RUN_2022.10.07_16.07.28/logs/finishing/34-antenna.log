@@ -1,0 +1,19 @@
+OpenROAD v2.0-3074-g944855835 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/tmp/merged_unpadded.lef
+[WARNING ORD-0033] -order_wires is deprecated.
+[INFO ODB-0127] Reading DEF file: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/results/routing/shiftregister.def
+[INFO ODB-0128] Design: shiftregister
+[INFO ODB-0130]     Created 72 pins.
+[INFO ODB-0131]     Created 1146 components and 5409 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 4380 connections.
+[INFO ODB-0133]     Created 406 nets and 1029 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/results/routing/shiftregister.def
+Notice 0: Split top of 67 T shapes.
+[INFO ANT-0001] Found 0 pin violations.
+[INFO ANT-0002] Found 0 net violations in 406 nets.

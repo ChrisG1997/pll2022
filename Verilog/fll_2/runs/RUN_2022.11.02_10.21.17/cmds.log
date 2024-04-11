@@ -1,0 +1,38 @@
+Wed Nov 02 10:21:18 UTC 2022 - Executing "/foss/tools/openlane/2022.04.07_02.53.08/scripts/mergeLef.py -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/tmp/merged_unpadded.lef |& tee /dev/null"
+
+Wed Nov 02 10:21:19 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/mergeLib.py --output /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/tmp/synthesis/merged.lib --name sky130A_merged /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Wed Nov 02 10:21:20 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/libtrim.py --cell-file /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/tmp/synthesis/trimmed.lib.exclude.list --output /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/tmp/synthesis/trimmed.lib /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/tmp/synthesis/merged.lib"
+
+Wed Nov 02 10:21:20 UTC 2022 - Executing "echo {openlane 39e93bd396022ed06b9b827335c0b10a714dd32b} > /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/OPENLANE_VERSION"
+
+Wed Nov 02 10:21:20 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/new_tracks.py -i /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/tmp/routing/config.tracks"
+
+Wed Nov 02 10:21:22 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Wed Nov 02 10:21:22 UTC 2022 - Executing "yosys -c /foss/tools/openlane/2022.04.07_02.53.08/scripts/yosys/synth.tcl -l /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Wed Nov 02 10:21:29 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/fll_2\/runs\/RUN_2022.11.02_10.21.17\/results\/synthesis\/fll_wrapper_2.v/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/config.tcl"
+
+Wed Nov 02 10:21:29 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/config.tcl"
+
+Wed Nov 02 10:21:29 UTC 2022 - Executing "sed -i /defparam/d /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/results/synthesis/fll_wrapper_2.v"
+
+Wed Nov 02 10:21:29 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/sta.tcl"
+
+Wed Nov 02 10:21:31 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/floorplan.tcl"
+
+Wed Nov 02 10:21:32 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/defutil.py extract_core_dims --output-data /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/tmp/dimensions.txt --input-lef /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/tmp/merged.lef /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/tmp/floorplan/3-initial_fp.def"
+
+Wed Nov 02 10:21:33 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/ioplacer.tcl"
+
+Wed Nov 02 10:21:34 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/tapcell.tcl"
+
+Wed Nov 02 10:21:35 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/pdn.tcl"
+
+Wed Nov 02 10:21:37 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/replace.tcl"
+
+Wed Nov 02 10:21:40 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/resizer.tcl"
+
+Wed Nov 02 10:21:43 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/generate_reports.py -d /foss/designs/ma2022/fll_2 --design_name fll_wrapper_2 --tag RUN_2022.11.02_10.21.17 --output_file /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/reports/final_summary_report.csv --man_report /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17/reports/manufacturability_report.rpt --run_path /foss/designs/ma2022/fll_2/runs/RUN_2022.11.02_10.21.17"
+

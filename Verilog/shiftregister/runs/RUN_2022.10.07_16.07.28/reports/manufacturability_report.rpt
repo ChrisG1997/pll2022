@@ -1,0 +1,19 @@
+Design Name: shiftregister
+Run Directory: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28
+----------------------------------------
+
+Magic DRC Summary:
+Source: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/reports/finishing/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/logs/finishing/32-shiftregister.lvs.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/reports/finishing/antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

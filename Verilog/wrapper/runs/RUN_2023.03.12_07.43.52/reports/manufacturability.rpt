@@ -1,0 +1,16 @@
+Design Name: wrapper
+Run Directory: /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52
+----------------------------------------
+
+Magic DRC Summary:
+Source: /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/logs/signoff/wrapper.lvs.lef.log
+Source not found.
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.

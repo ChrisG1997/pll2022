@@ -1,0 +1,27 @@
+
+21. Printing statistics.
+
+=== fll_wrapper_2 ===
+
+   Number of wires:                361
+   Number of wire bits:            547
+   Number of public wires:          18
+   Number of public wire bits:     110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                423
+     $_ANDNOT_                     102
+     $_AND_                         14
+     $_MUX_                         25
+     $_NAND_                        15
+     $_NOR_                         17
+     $_NOT_                         54
+     $_ORNOT_                       22
+     $_OR_                          46
+     $_XNOR_                        12
+     $_XOR_                         70
+     sky130_fd_sc_hd__dfrtp_2       41
+     sky130_fd_sc_hd__dfstp_2        2
+     sky130_fd_sc_hd__dfxtp_2        3
+

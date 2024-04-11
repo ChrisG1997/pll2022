@@ -1,0 +1,35 @@
+digraph "clock_divider" {
+label="clock_divider";
+rankdir="LR";
+remincross=true;
+n8 [ shape=diamond, label="counter", color="black", fontcolor="black" ];
+n9 [ shape=octagon, label="clock_out", color="black", fontcolor="black" ];
+n10 [ shape=octagon, label="clock_in", color="black", fontcolor="black" ];
+v0 [ label="1'1" ];
+v1 [ label="1'0" ];
+c15 [ shape=record, label="{{<p11> A|<p12> B|<p13> S}|$5\n$mux|{<p14> Y}}" ];
+v2 [ label="7" ];
+c16 [ shape=record, label="{{<p11> A|<p12> B}|$4\n$lt|{<p14> Y}}" ];
+v3 [ label="14" ];
+c17 [ shape=record, label="{{<p11> A|<p12> B}|$3\n$ge|{<p14> Y}}" ];
+v4 [ label="28'0000000000000000000000000001" ];
+c18 [ shape=record, label="{{<p11> A|<p12> B}|$2\n$add|{<p14> Y}}" ];
+p5 [shape=box, style=rounded, label="PROC $6\n/foss/designs/ma2022/freqdiv/src/freqdiv.v:7.11-7.24"];
+p6 [shape=box, style=rounded, label="PROC $1\n/foss/designs/ma2022/freqdiv/src/freqdiv.v:9.1-15.4"];
+n10:e -> p6:w [color="black", label=""];
+c15:p14:e -> p6:w [color="black", label=""];
+c16:p14:e -> c15:p13:w [color="black", label=""];
+c17:p14:e -> p6:w [color="black", label=""];
+c18:p14:e -> p6:w [color="black", style="setlinewidth(3)", label=""];
+p5:e -> n8:w [color="black", style="setlinewidth(3)", label=""];
+p6:e -> n8:w [color="black", style="setlinewidth(3)", label=""];
+n8:e -> c16:p11:w [color="black", style="setlinewidth(3)", label=""];
+n8:e -> c17:p11:w [color="black", style="setlinewidth(3)", label=""];
+n8:e -> c18:p11:w [color="black", style="setlinewidth(3)", label=""];
+p6:e -> n9:w [color="black", label=""];
+v0:e -> c15:p12:w [color="black", label=""];
+v1:e -> c15:p11:w [color="black", label=""];
+v2:e -> c16:p12:w [color="black", style="setlinewidth(3)", label=""];
+v3:e -> c17:p12:w [color="black", style="setlinewidth(3)", label=""];
+v4:e -> c18:p12:w [color="black", style="setlinewidth(3)", label=""];
+}

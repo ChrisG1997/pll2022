@@ -1,0 +1,17 @@
+
+Input: /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/routing/clock_divider.def
+Output: /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.klayout.gds
+Design: clock_divider
+Technology File: /foss/pdk/sky130A/libs.tech/klayout/sky130A.lyt
+GDS File List: ['/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds']
+LEF File: /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/merged.lef
+
+[INFO] Clearing cells...
+[INFO] Merging GDS files...
+	/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+[INFO] Copying toplevel cell 'clock_divider'
+WARNING: no fill config file specified
+[INFO] Checking for missing GDS...
+[INFO] All LEF cells have matching GDS cells
+[INFO] Writing out GDS '/foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.klayout.gds'
+[INFO] Done.

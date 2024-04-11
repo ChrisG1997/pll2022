@@ -1,0 +1,71 @@
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: _636_ (rising edge-triggered flip-flop)
+Endpoint: pwm (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.14    0.00    0.00 ^ _636_/CLK (sky130_fd_sc_hd__dfrtp_1)
+                  0.16    0.47    0.47 ^ _636_/Q (sky130_fd_sc_hd__dfrtp_1)
+     4    0.02                           pwm_module.count[1] (net)
+                  0.16    0.00    0.47 ^ _447_/A (sky130_fd_sc_hd__inv_2)
+                  0.04    0.06    0.53 v _447_/Y (sky130_fd_sc_hd__inv_2)
+     2    0.01                           _236_ (net)
+                  0.04    0.00    0.53 v _448_/A2 (sky130_fd_sc_hd__o211a_1)
+                  0.04    0.21    0.73 v _448_/X (sky130_fd_sc_hd__o211a_1)
+     1    0.00                           _237_ (net)
+                  0.04    0.00    0.73 v _449_/C1 (sky130_fd_sc_hd__a221o_1)
+                  0.05    0.27    1.00 v _449_/X (sky130_fd_sc_hd__a221o_1)
+     1    0.00                           _238_ (net)
+                  0.05    0.00    1.00 v _450_/C1 (sky130_fd_sc_hd__o221a_1)
+                  0.04    0.12    1.12 v _450_/X (sky130_fd_sc_hd__o221a_1)
+     1    0.00                           _239_ (net)
+                  0.04    0.00    1.12 v _451_/C1 (sky130_fd_sc_hd__a221o_1)
+                  0.05    0.27    1.38 v _451_/X (sky130_fd_sc_hd__a221o_1)
+     1    0.00                           _240_ (net)
+                  0.05    0.00    1.38 v _452_/C1 (sky130_fd_sc_hd__o221a_1)
+                  0.05    0.12    1.50 v _452_/X (sky130_fd_sc_hd__o221a_1)
+     1    0.00                           _241_ (net)
+                  0.05    0.00    1.50 v _453_/C1 (sky130_fd_sc_hd__a221o_1)
+                  0.05    0.27    1.77 v _453_/X (sky130_fd_sc_hd__a221o_1)
+     1    0.00                           _242_ (net)
+                  0.05    0.00    1.77 v _454_/C1 (sky130_fd_sc_hd__o221a_1)
+                  0.05    0.12    1.89 v _454_/X (sky130_fd_sc_hd__o221a_1)
+     1    0.00                           _243_ (net)
+                  0.05    0.00    1.89 v _455_/C1 (sky130_fd_sc_hd__a221o_1)
+                  0.05    0.27    2.16 v _455_/X (sky130_fd_sc_hd__a221o_1)
+     1    0.00                           _244_ (net)
+                  0.05    0.00    2.16 v _456_/C1 (sky130_fd_sc_hd__o221a_1)
+                  0.05    0.13    2.29 v _456_/X (sky130_fd_sc_hd__o221a_1)
+     1    0.00                           _245_ (net)
+                  0.05    0.00    2.29 v _457_/B1 (sky130_fd_sc_hd__a21o_1)
+                  0.03    0.16    2.44 v _457_/X (sky130_fd_sc_hd__a21o_1)
+     1    0.00                           net37 (net)
+                  0.03    0.00    2.44 v output37/A (sky130_fd_sc_hd__buf_2)
+                  0.09    0.18    2.63 v output37/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           pwm (net)
+                  0.09    0.00    2.63 v pwm (out)
+                                  2.63   data arrival time
+
+                         40.00   40.00   clock clk (rise edge)
+                          0.00   40.00   clock network delay (propagated)
+                         -0.25   39.75   clock uncertainty
+                          0.00   39.75   clock reconvergence pessimism
+                         -8.00   31.75   output external delay
+                                 31.75   data required time
+-----------------------------------------------------------------------------
+                                 31.75   data required time
+                                 -2.63   data arrival time
+-----------------------------------------------------------------------------
+                                 29.12   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.

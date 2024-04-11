@@ -1,0 +1,7 @@
+[WARNING]: Current core area is too small for a power grid. The power grid will be minimized.
+[WARNING]: You're using GLB_RT_MAXLAYER in your configuration, which is a deprecated variable that will be removed in the future.
+[WARNING]: We recommend you update your configuration as follows:
+[WARNING]: 	set ::env(RT_MAX_LAYER) {met3}
+[WARNING]: You're using GLB_RT_MAXLAYER in your configuration, which is a deprecated variable that will be removed in the future.
+[WARNING]: We recommend you update your configuration as follows:
+[WARNING]: 	set ::env(RT_MAX_LAYER) {met3}

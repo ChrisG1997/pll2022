@@ -1,0 +1,30 @@
+
+20. Printing statistics.
+
+=== wrapper ===
+
+   Number of wires:                404
+   Number of wire bits:            760
+   Number of public wires:          30
+   Number of public wire bits:     292
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                658
+     $_ANDNOT_                      99
+     $_AND_                         15
+     $_DFFE_PP0N_                   96
+     $_DFFE_PP0P_                  106
+     $_DFFE_PP1P_                    1
+     $_DFFE_PP_                      3
+     $_DFF_PP0_                     31
+     $_DFF_PP1_                      1
+     $_MUX_                        118
+     $_NAND_                        11
+     $_NOR_                         16
+     $_NOT_                         11
+     $_ORNOT_                       26
+     $_OR_                          43
+     $_XNOR_                        10
+     $_XOR_                         71
+

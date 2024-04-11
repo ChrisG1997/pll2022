@@ -1,0 +1,17 @@
+
+Input: /foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/results/routing/shiftregister.def
+Output: /foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/results/finishing/shiftregister.klayout.gds
+Design: shiftregister
+Technology File: /foss/pdk/sky130A/libs.tech/klayout/sky130A.lyt
+GDS File List: ['/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds']
+LEF File: /foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/tmp/merged.lef
+
+[INFO] Clearing cells...
+[INFO] Merging GDS files...
+	/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+[INFO] Copying toplevel cell 'shiftregister'
+WARNING: no fill config file specified
+[INFO] Checking for missing GDS...
+[INFO] All LEF cells have matching GDS cells
+[INFO] Writing out GDS '/foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/results/finishing/shiftregister.klayout.gds'
+[INFO] Done.

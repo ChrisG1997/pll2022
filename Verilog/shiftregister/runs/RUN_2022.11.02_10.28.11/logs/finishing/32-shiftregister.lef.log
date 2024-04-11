@@ -1,0 +1,533 @@
+Warning: Equate pins:  cell sky130_fd_sc_hd__fill_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_2         |Circuit 2: sky130_fd_sc_hd__fill_2         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_2 and sky130_fd_sc_hd__fill_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__tapvpwrvgnd_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__tapvpwrvgnd_1  |Circuit 2: sky130_fd_sc_hd__tapvpwrvgnd_1  
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__tapvpwrvgnd_1 and sky130_fd_sc_hd__tapvpwrvgnd_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_12 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_12       |Circuit 2: sky130_fd_sc_hd__decap_12       
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_12 and sky130_fd_sc_hd__decap_12 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_8        |Circuit 2: sky130_fd_sc_hd__decap_8        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_4        |Circuit 2: sky130_fd_sc_hd__decap_4        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_4 and sky130_fd_sc_hd__decap_4 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__fill_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_1         |Circuit 2: sky130_fd_sc_hd__fill_1         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_1 and sky130_fd_sc_hd__fill_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__mux2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__mux2_1         |Circuit 2: sky130_fd_sc_hd__mux2_1         
+-------------------------------------------|-------------------------------------------
+A0                                         |A0                                         
+A1                                         |A1                                         
+S                                          |S                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__mux2_1 and sky130_fd_sc_hd__mux2_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_6 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_6        |Circuit 2: sky130_fd_sc_hd__decap_6        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_6 and sky130_fd_sc_hd__decap_6 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__inv_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__inv_2          |Circuit 2: sky130_fd_sc_hd__inv_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__inv_2 and sky130_fd_sc_hd__inv_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_2       |Circuit 2: sky130_fd_sc_hd__clkbuf_2       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_2 and sky130_fd_sc_hd__clkbuf_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dlymetal6s2s_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dlymetal6s2s_1 |Circuit 2: sky130_fd_sc_hd__dlymetal6s2s_1 
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dlymetal6s2s_1 and sky130_fd_sc_hd__dlymetal6s2s_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_1       |Circuit 2: sky130_fd_sc_hd__clkbuf_1       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_1 and sky130_fd_sc_hd__clkbuf_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dfrtp_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dfrtp_1        |Circuit 2: sky130_fd_sc_hd__dfrtp_1        
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+D                                          |D                                          
+RESET_B                                    |RESET_B                                    
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+Q                                          |Q                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dfrtp_1 and sky130_fd_sc_hd__dfrtp_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__buf_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__buf_2          |Circuit 2: sky130_fd_sc_hd__buf_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__buf_2 and sky130_fd_sc_hd__buf_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__diode_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__diode_2        |Circuit 2: sky130_fd_sc_hd__diode_2        
+-------------------------------------------|-------------------------------------------
+DIODE                                      |DIODE                                      
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__diode_2 and sky130_fd_sc_hd__diode_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dfrtp_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dfrtp_2        |Circuit 2: sky130_fd_sc_hd__dfrtp_2        
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+D                                          |D                                          
+RESET_B                                    |RESET_B                                    
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+Q                                          |Q                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dfrtp_2 and sky130_fd_sc_hd__dfrtp_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dfrtp_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dfrtp_4        |Circuit 2: sky130_fd_sc_hd__dfrtp_4        
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+D                                          |D                                          
+RESET_B                                    |RESET_B                                    
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+Q                                          |Q                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dfrtp_4 and sky130_fd_sc_hd__dfrtp_4 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_16 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_16      |Circuit 2: sky130_fd_sc_hd__clkbuf_16      
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_16 and sky130_fd_sc_hd__clkbuf_16 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_4       |Circuit 2: sky130_fd_sc_hd__clkbuf_4       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_4 and sky130_fd_sc_hd__clkbuf_4 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__mux2_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__mux2_2         |Circuit 2: sky130_fd_sc_hd__mux2_2         
+-------------------------------------------|-------------------------------------------
+A0                                         |A0                                         
+A1                                         |A1                                         
+S                                          |S                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__mux2_2 and sky130_fd_sc_hd__mux2_2 are equivalent.
+
+Class shiftregister (0):  Merged 2627 parallel devices.
+Class shiftregister (1):  Merged 2627 parallel devices.
+Subcircuit summary:
+Circuit 1: shiftregister                   |Circuit 2: shiftregister                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__fill_2 (133->1)           |sky130_fd_sc_hd__fill_2 (133->1)           
+sky130_fd_sc_hd__tapvpwrvgnd_1 (366->1)    |sky130_fd_sc_hd__tapvpwrvgnd_1 (366->1)    
+sky130_fd_sc_hd__decap_12 (241->1)         |sky130_fd_sc_hd__decap_12 (241->1)         
+sky130_fd_sc_hd__decap_8 (254->1)          |sky130_fd_sc_hd__decap_8 (254->1)          
+sky130_fd_sc_hd__decap_4 (878->1)          |sky130_fd_sc_hd__decap_4 (878->1)          
+sky130_fd_sc_hd__fill_1 (380->1)           |sky130_fd_sc_hd__fill_1 (380->1)           
+sky130_fd_sc_hd__mux2_1 (299)              |sky130_fd_sc_hd__mux2_1 (299)              
+sky130_fd_sc_hd__decap_6 (207->1)          |sky130_fd_sc_hd__decap_6 (207->1)          
+sky130_fd_sc_hd__inv_2 (200)               |sky130_fd_sc_hd__inv_2 (200)               
+sky130_fd_sc_hd__clkbuf_2 (113)            |sky130_fd_sc_hd__clkbuf_2 (113)            
+sky130_fd_sc_hd__dlymetal6s2s_1 (29)       |sky130_fd_sc_hd__dlymetal6s2s_1 (29)       
+sky130_fd_sc_hd__clkbuf_1 (234)            |sky130_fd_sc_hd__clkbuf_1 (234)            
+sky130_fd_sc_hd__decap_3 (176->1)          |sky130_fd_sc_hd__decap_3 (176->1)          
+sky130_fd_sc_hd__dfrtp_1 (145)             |sky130_fd_sc_hd__dfrtp_1 (145)             
+sky130_fd_sc_hd__buf_2 (172)               |sky130_fd_sc_hd__buf_2 (172)               
+sky130_fd_sc_hd__diode_2 (14)              |sky130_fd_sc_hd__diode_2 (14)              
+sky130_fd_sc_hd__dfrtp_2 (27)              |sky130_fd_sc_hd__dfrtp_2 (27)              
+sky130_fd_sc_hd__dfrtp_4 (28)              |sky130_fd_sc_hd__dfrtp_4 (28)              
+sky130_fd_sc_hd__clkbuf_16 (1)             |sky130_fd_sc_hd__clkbuf_16 (1)             
+sky130_fd_sc_hd__clkbuf_4 (3)              |sky130_fd_sc_hd__clkbuf_4 (3)              
+sky130_fd_sc_hd__mux2_2 (1)                |sky130_fd_sc_hd__mux2_2 (1)                
+Number of devices: 1274                    |Number of devices: 1274                    
+Number of nets: 1359                       |Number of nets: 1359                       
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: shiftregister                   |Circuit 2: shiftregister                   
+-------------------------------------------|-------------------------------------------
+clk                                        |clk                                        
+load                                       |load                                       
+reset                                      |reset                                      
+read                                       |read                                       
+r_read[28]                                 |r_read[28]                                 
+r_read[48]                                 |r_read[48]                                 
+r_read[53]                                 |r_read[53]                                 
+r_read[13]                                 |r_read[13]                                 
+r_read[24]                                 |r_read[24]                                 
+r_read[0]                                  |r_read[0]                                  
+r_read[34]                                 |r_read[34]                                 
+r_read[35]                                 |r_read[35]                                 
+r_read[55]                                 |r_read[55]                                 
+r_read[14]                                 |r_read[14]                                 
+r_read[5]                                  |r_read[5]                                  
+r_read[7]                                  |r_read[7]                                  
+r_read[16]                                 |r_read[16]                                 
+r_read[8]                                  |r_read[8]                                  
+r_read[31]                                 |r_read[31]                                 
+r_read[46]                                 |r_read[46]                                 
+r_read[91]                                 |r_read[91]                                 
+r_read[27]                                 |r_read[27]                                 
+r_read[29]                                 |r_read[29]                                 
+r_read[2]                                  |r_read[2]                                  
+r_read[32]                                 |r_read[32]                                 
+r_read[39]                                 |r_read[39]                                 
+r_read[38]                                 |r_read[38]                                 
+r_read[44]                                 |r_read[44]                                 
+r_read[47]                                 |r_read[47]                                 
+r_read[12]                                 |r_read[12]                                 
+r_read[57]                                 |r_read[57]                                 
+r_read[6]                                  |r_read[6]                                  
+r_read[77]                                 |r_read[77]                                 
+r_read[75]                                 |r_read[75]                                 
+r_read[78]                                 |r_read[78]                                 
+r_read[76]                                 |r_read[76]                                 
+r_read[82]                                 |r_read[82]                                 
+r_read[81]                                 |r_read[81]                                 
+r_read[21]                                 |r_read[21]                                 
+r_read[86]                                 |r_read[86]                                 
+r_read[84]                                 |r_read[84]                                 
+r_read[74]                                 |r_read[74]                                 
+r_read[88]                                 |r_read[88]                                 
+r_read[90]                                 |r_read[90]                                 
+r_read[92]                                 |r_read[92]                                 
+r_read[93]                                 |r_read[93]                                 
+r_read[1]                                  |r_read[1]                                  
+r_read[22]                                 |r_read[22]                                 
+r_read[25]                                 |r_read[25]                                 
+r_read[10]                                 |r_read[10]                                 
+r_read[42]                                 |r_read[42]                                 
+r_read[49]                                 |r_read[49]                                 
+r_read[52]                                 |r_read[52]                                 
+r_read[50]                                 |r_read[50]                                 
+r_read[56]                                 |r_read[56]                                 
+r_read[58]                                 |r_read[58]                                 
+r_read[59]                                 |r_read[59]                                 
+r_read[17]                                 |r_read[17]                                 
+r_read[60]                                 |r_read[60]                                 
+r_read[62]                                 |r_read[62]                                 
+r_read[67]                                 |r_read[67]                                 
+r_read[68]                                 |r_read[68]                                 
+r_read[64]                                 |r_read[64]                                 
+r_read[71]                                 |r_read[71]                                 
+r_read[72]                                 |r_read[72]                                 
+r_read[73]                                 |r_read[73]                                 
+r_read[79]                                 |r_read[79]                                 
+r_read[89]                                 |r_read[89]                                 
+r_read[85]                                 |r_read[85]                                 
+r_read[94]                                 |r_read[94]                                 
+r_read[96]                                 |r_read[96]                                 
+s_in                                       |s_in                                       
+r_read[23]                                 |r_read[23]                                 
+r_read[20]                                 |r_read[20]                                 
+r_read[19]                                 |r_read[19]                                 
+r_read[26]                                 |r_read[26]                                 
+r_read[33]                                 |r_read[33]                                 
+r_read[30]                                 |r_read[30]                                 
+r_read[36]                                 |r_read[36]                                 
+r_read[37]                                 |r_read[37]                                 
+r_read[9]                                  |r_read[9]                                  
+r_read[3]                                  |r_read[3]                                  
+r_read[11]                                 |r_read[11]                                 
+r_read[45]                                 |r_read[45]                                 
+r_read[43]                                 |r_read[43]                                 
+r_read[41]                                 |r_read[41]                                 
+r_read[40]                                 |r_read[40]                                 
+r_read[4]                                  |r_read[4]                                  
+r_read[51]                                 |r_read[51]                                 
+r_read[54]                                 |r_read[54]                                 
+r_read[65]                                 |r_read[65]                                 
+r_read[66]                                 |r_read[66]                                 
+r_read[69]                                 |r_read[69]                                 
+r_read[70]                                 |r_read[70]                                 
+r_read[61]                                 |r_read[61]                                 
+r_read[18]                                 |r_read[18]                                 
+r_read[15]                                 |r_read[15]                                 
+r_read[63]                                 |r_read[63]                                 
+r_read[83]                                 |r_read[83]                                 
+r_read[80]                                 |r_read[80]                                 
+r_read[87]                                 |r_read[87]                                 
+r_read[98]                                 |r_read[98]                                 
+r_read[97]                                 |r_read[97]                                 
+r_read[95]                                 |r_read[95]                                 
+r_read[99]                                 |r_read[99]                                 
+r_load[11]                                 |r_load[11]                                 
+r_load[3]                                  |r_load[3]                                  
+r_load[29]                                 |r_load[29]                                 
+r_load[58]                                 |r_load[58]                                 
+r_load[55]                                 |r_load[55]                                 
+r_load[76]                                 |r_load[76]                                 
+r_load[10]                                 |r_load[10]                                 
+r_load[13]                                 |r_load[13]                                 
+r_load[12]                                 |r_load[12]                                 
+r_load[39]                                 |r_load[39]                                 
+r_load[36]                                 |r_load[36]                                 
+r_load[35]                                 |r_load[35]                                 
+r_load[19]                                 |r_load[19]                                 
+r_load[15]                                 |r_load[15]                                 
+r_load[30]                                 |r_load[30]                                 
+r_load[94]                                 |r_load[94]                                 
+r_load[1]                                  |r_load[1]                                  
+r_load[4]                                  |r_load[4]                                  
+r_load[64]                                 |r_load[64]                                 
+r_load[44]                                 |r_load[44]                                 
+r_load[46]                                 |r_load[46]                                 
+r_load[14]                                 |r_load[14]                                 
+r_load[2]                                  |r_load[2]                                  
+r_load[37]                                 |r_load[37]                                 
+r_load[38]                                 |r_load[38]                                 
+r_load[45]                                 |r_load[45]                                 
+r_load[27]                                 |r_load[27]                                 
+r_load[31]                                 |r_load[31]                                 
+r_load[34]                                 |r_load[34]                                 
+r_load[33]                                 |r_load[33]                                 
+r_load[83]                                 |r_load[83]                                 
+r_load[28]                                 |r_load[28]                                 
+r_load[26]                                 |r_load[26]                                 
+r_load[53]                                 |r_load[53]                                 
+r_load[52]                                 |r_load[52]                                 
+r_load[17]                                 |r_load[17]                                 
+r_load[22]                                 |r_load[22]                                 
+r_load[24]                                 |r_load[24]                                 
+r_load[62]                                 |r_load[62]                                 
+r_load[65]                                 |r_load[65]                                 
+r_load[41]                                 |r_load[41]                                 
+r_load[82]                                 |r_load[82]                                 
+r_load[81]                                 |r_load[81]                                 
+r_load[16]                                 |r_load[16]                                 
+r_load[63]                                 |r_load[63]                                 
+r_load[61]                                 |r_load[61]                                 
+r_load[23]                                 |r_load[23]                                 
+r_load[84]                                 |r_load[84]                                 
+r_load[80]                                 |r_load[80]                                 
+r_load[25]                                 |r_load[25]                                 
+r_load[49]                                 |r_load[49]                                 
+r_load[50]                                 |r_load[50]                                 
+r_load[20]                                 |r_load[20]                                 
+r_load[7]                                  |r_load[7]                                  
+r_load[92]                                 |r_load[92]                                 
+r_load[85]                                 |r_load[85]                                 
+r_load[89]                                 |r_load[89]                                 
+r_load[66]                                 |r_load[66]                                 
+r_load[67]                                 |r_load[67]                                 
+r_load[68]                                 |r_load[68]                                 
+r_load[69]                                 |r_load[69]                                 
+r_load[72]                                 |r_load[72]                                 
+r_load[75]                                 |r_load[75]                                 
+r_load[88]                                 |r_load[88]                                 
+r_load[78]                                 |r_load[78]                                 
+r_load[79]                                 |r_load[79]                                 
+r_load[86]                                 |r_load[86]                                 
+r_load[93]                                 |r_load[93]                                 
+r_load[95]                                 |r_load[95]                                 
+r_load[77]                                 |r_load[77]                                 
+r_load[87]                                 |r_load[87]                                 
+r_load[18]                                 |r_load[18]                                 
+r_load[21]                                 |r_load[21]                                 
+r_load[40]                                 |r_load[40]                                 
+r_load[47]                                 |r_load[47]                                 
+r_load[48]                                 |r_load[48]                                 
+r_load[43]                                 |r_load[43]                                 
+r_load[42]                                 |r_load[42]                                 
+r_load[90]                                 |r_load[90]                                 
+r_load[5]                                  |r_load[5]                                  
+r_load[6]                                  |r_load[6]                                  
+r_load[8]                                  |r_load[8]                                  
+r_load[9]                                  |r_load[9]                                  
+r_load[51]                                 |r_load[51]                                 
+r_load[54]                                 |r_load[54]                                 
+r_load[60]                                 |r_load[60]                                 
+r_load[99]                                 |r_load[99]                                 
+r_load[57]                                 |r_load[57]                                 
+r_load[59]                                 |r_load[59]                                 
+r_load[56]                                 |r_load[56]                                 
+r_load[97]                                 |r_load[97]                                 
+r_load[96]                                 |r_load[96]                                 
+r_load[98]                                 |r_load[98]                                 
+r_load[0]                                  |r_load[0]                                  
+r_load[73]                                 |r_load[73]                                 
+r_load[74]                                 |r_load[74]                                 
+r_load[32]                                 |r_load[32]                                 
+r_load[91]                                 |r_load[91]                                 
+r_load[71]                                 |r_load[71]                                 
+r_load[70]                                 |r_load[70]                                 
+s_out                                      |s_out                                      
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes shiftregister and shiftregister are equivalent.
+Circuits match uniquely.

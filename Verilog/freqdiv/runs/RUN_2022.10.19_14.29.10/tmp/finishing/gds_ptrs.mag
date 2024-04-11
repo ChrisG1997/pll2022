@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 10762 12906
+string GDS_END 308096
+string GDS_FILE /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.magic.gds
+string GDS_START 114506
+<< end >>

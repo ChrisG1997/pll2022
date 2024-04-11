@@ -1,0 +1,21 @@
+OpenROAD v2.0-5460-g127815b81 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL           23175.7 u
+legalized HPWL          23741.1 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 457 instances
+[INFO DPL-0021] HPWL before           23741.1 u
+[INFO DPL-0022] HPWL after            23175.7 u
+[INFO DPL-0023] HPWL delta               -2.4 %
+Setting global connections for newly added cells...
+Writing OpenROAD database to /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/placement/wrapper.odb...
+Writing netlist to /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/placement/wrapper.nl.v...
+Writing powered netlist to /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/placement/wrapper.pnl.v...
+Writing layout to /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/placement/wrapper.def...

@@ -1,0 +1,5 @@
+
+23. Executing CHECK pass (checking for obvious problems).
+Checking module clk_divider...
+Warning: Wire clk_divider.\clk_out is used but has no driver.
+Found and reported 1 problems.

@@ -1,0 +1,319 @@
+CVC: Log output to /foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/reports/finishing/shiftregister.rpt
+CVC: Error output to /foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/reports/finishing/shiftregister.rpt.error.gz
+CVC: Debug output to /foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/reports/finishing/shiftregister.rpt.debug.gz
+CVC: Circuit Validation Check  Version 1.1.0
+CVC: Start: Wed Nov  2 11:53:14 2022
+
+Using the following parameters for CVC (Circuit Validation Check) from /foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/cvcrc.sky130A
+CVC_TOP = 'shiftregister'
+CVC_NETLIST = '/foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/tmp/finishing/shiftregister.cdl'
+CVC_MODE = 'shiftregister'
+CVC_MODEL_FILE = '/foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/cvc.sky130A.models'
+CVC_POWER_FILE = '/foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/tmp/finishing/shiftregister.power'
+CVC_FUSE_FILE = ''
+CVC_REPORT_FILE = '/foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/reports/finishing/shiftregister.rpt'
+CVC_REPORT_TITLE = 'CVC $CVC_TOP'
+CVC_CIRCUIT_ERROR_LIMIT = '100'
+CVC_SEARCH_LIMIT = '100'
+CVC_LEAK_LIMIT = '0.0002'
+CVC_SOI = 'false'
+CVC_SCRC = 'false'
+CVC_VTH_GATES = 'false'
+CVC_MIN_VTH_GATES = 'false'
+CVC_IGNORE_VTH_FLOATING = 'false'
+CVC_IGNORE_NO_LEAK_FLOATING = 'false'
+CVC_LEAK_OVERVOLTAGE = 'true'
+CVC_LOGIC_DIODES = 'false'
+CVC_ANALOG_GATES = 'true'
+CVC_BACKUP_RESULTS = 'false'
+CVC_MOS_DIODE_ERROR_THRESHOLD = '0'
+CVC_SHORT_ERROR_THRESHOLD = '0'
+CVC_BIAS_ERROR_THRESHOLD = '0'
+CVC_FORWARD_ERROR_THRESHOLD = '0'
+CVC_FLOATING_ERROR_THRESHOLD = '0'
+CVC_GATE_ERROR_THRESHOLD = '0'
+CVC_LEAK?_ERROR_THRESHOLD = '0'
+CVC_EXPECTED_ERROR_THRESHOLD = '0'
+CVC_OVERVOLTAGE_ERROR_THRESHOLD = '0'
+CVC_PARALLEL_CIRCUIT_PORT_LIMIT = '0'
+CVC_CELL_ERROR_LIMIT_FILE = ''
+CVC_CELL_CHECKSUM_FILE = ''
+CVC_LARGE_CIRCUIT_SIZE = '10000000'
+CVC_NET_CHECK_FILE = ''
+CVC_MODEL_CHECK_FILE = ''
+End of parameters
+
+CVC: Reading device model settings...
+CVC: Reading power settings...
+CVC: Parsing netlist /foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/tmp/finishing/shiftregister.cdl
+Cdl fixed data size 70930
+Usage CDL: Time: 0  Memory: 8652  I/O: 8  Swap: 0
+CVC: Counting and linking...
+CVC: Assigning IDs ...
+Usage DB: Time: 0  Memory: 9176  I/O: 8  Swap: 0
+CVC: 3595(3595) instances, 6443(6443) nets, 15228(15228) devices.
+CVC: Setting models ...
+Setting model tolerances...
+CVC: Shorting switches...
+	Shorted 0 short
+Setting instance power...
+
+ModelList> filename /foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/cvc.sky130A.models
+ Model> sky130_fd_pr__cap_mim_m3_1         0 C->capacitor  Parameters>
+ Model> sky130_fd_pr__cap_mim_m3_2         0 C->capacitor  Parameters>
+ Model> sky130_fd_pr__cap_var         0 C->capacitor  Parameters>
+ Model> condiode           0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__diode_pd2nw_05v5         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__diode_pw2nd_05v5         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__diode_pw2nd_11v0         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__model__parasitic__diode_ps2dn         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__model__parasitic__diode_ps2nw         0 D->diode      Parameters> Diodes> 1-2
+ Model> sky130_fd_pr__model__parasitic__diode_pw2dn         0 D->diode      Parameters> Diodes> 1-2
+ Model> nfet_01v8       7614 M->nmos       Parameters> Vth=0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> pfet_01v8_hvt      7614 M->pmos       Parameters> Vth=-0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_bs_flash__special_sonosfet_star         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__esd_nfet_g5v0d10v5         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_01v8         0 M->nmos       Parameters> Vth=0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_01v8_lvt         0 M->nmos       Parameters> Vth=0.1 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_03v3_nvt         0 M->nmos       Parameters> Vth=0.2 Vds=3.3 Vgs=3.3 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_05v0_nvt         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__nfet_g5v0d10v5         0 M->nmos       Parameters> Vth=0.2 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__pfet_01v8         0 M->pmos       Parameters> Vth=-0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pfet_01v8_hvt         0 M->pmos       Parameters> Vth=-0.3 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pfet_01v8_lvt         0 M->pmos       Parameters> Vth=-0.1 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pfet_g5v0d10v5         0 M->pmos       Parameters> Vth=-0.2 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__special_nfet_latch         0 M->nmos       Parameters> Vth=0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> sky130_fd_pr__special_pfet_pass         0 M->pmos       Parameters> Vth=-0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> sky130_fd_pr__pnp_05v5         0 Q->bipolar    Parameters>
+ Model> short              0 R->switch_on  Parameters>
+ Model> sky130_fd_pr__res_generic_m1         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m2         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m3         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m4         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_m5         0 R->resistor   Parameters> R=l/w
+ Model> sky130_fd_pr__res_generic_nd         0 R->resistor   Parameters> R=l/w*120
+ Model> sky130_fd_pr__res_generic_nd__hv         0 R->resistor   Parameters> R=l/w*114
+ Model> sky130_fd_pr__res_generic_pd__hv         0 R->resistor   Parameters> R=l/w*191
+ Model> sky130_fd_pr__res_generic_po         0 R->resistor   Parameters> R=l/w*48
+ Model> sky130_fd_pr__res_high_po         0 R->resistor   Parameters> R=l/w*2000
+ Model> sky130_fd_pr__res_xhigh_po         0 R->resistor   Parameters> R=l/w*2000
+ModelList> end
+
+Power List> filename /foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/tmp/finishing/shiftregister.power
+ VPWR power 1.8 -> 1.8 power
+ VGND power 0.0 -> 0.0 power
+ clk~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+ load~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+ read~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+ reset~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+ s_in~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+r_read[99:0]~>std_input input std_input
+ ->r_read[0] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[10] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[11] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[12] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[13] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[14] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[15] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[16] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[17] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[18] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[19] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[1] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[20] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[21] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[22] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[23] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[24] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[25] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[26] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[27] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[28] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[29] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[2] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[30] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[31] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[32] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[33] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[34] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[35] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[36] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[37] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[38] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[39] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[3] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[40] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[41] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[42] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[43] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[44] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[45] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[46] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[47] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[48] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[49] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[4] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[50] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[51] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[52] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[53] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[54] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[55] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[56] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[57] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[58] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[59] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[5] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[60] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[61] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[62] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[63] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[64] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[65] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[66] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[67] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[68] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[69] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[6] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[70] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[71] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[72] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[73] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[74] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[75] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[76] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[77] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[78] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[79] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[7] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[80] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[81] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[82] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[83] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[84] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[85] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[86] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[87] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[88] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[89] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[8] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[90] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[91] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[92] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[93] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[94] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[95] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[96] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[97] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[98] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[99] input std_input -> min@0.0 max@1.8 input family(std_input;)
+ ->r_read[9] input std_input -> min@0.0 max@1.8 input family(std_input;)
+> expected values
+> macros
+ #define std_input min@VGND max@VPWR -> min@0.0 max@1.8
+Power List> end
+
+CVC: Linking devices...
+Usage EQUIV: Time: 0  Memory: 11044  I/O: 32  Swap: 0
+Power nets 115
+Hash dump:parameter->resistance map
+Contains 53 buckets, 28 elements
+Element count 0, 30
+Element count 1, 18
+Element count 2, 5
+Unused hash: 0.57, average depth 1.36
+Hash dump:text->circuit map
+Contains 409 buckets, 438 elements
+Element count 0, 111
+Element count 1, 181
+Element count 2, 95
+Element count 3, 21
+Element count 4, 1
+Unused hash: 0.27, average depth 1.75
+Hash dump:string->text map
+Contains 3739 buckets, 6084 elements
+Element count 0, 711
+Element count 1, 1198
+Element count 2, 1022
+Element count 3, 508
+Element count 4, 212
+Element count 5, 62
+Element count 6, 22
+Element count 7, 4
+Unused hash: 0.19, average depth 2.60
+CVC: Shorting non conducting resistors...
+CVC: Calculating resistor voltages...
+Usage RES: Time: 0  Memory: 11044  I/O: 32  Swap: 0
+Power nets 115
+CVC: Calculating min/max voltages...
+Processing trivial nets found 2636 trivial nets
+CVC: Ignoring invalid calculations...
+CVC:   Removed 0 calculations
+Copying master nets
+CVC: Ignoring non-conducting devices...
+CVC:   Ignored 0 devices
+Usage MIN/MAX1: Time: 0  Memory: 11308  I/O: 32  Swap: 0
+Power nets 2315
+! Checking forward bias diode errors: 
+
+! Checking nmos source/drain vs bias errors: 
+
+! Checking nmos gate vs source errors: 
+
+! Checking pmos source/drain vs bias errors: 
+
+! Checking pmos gate vs source errors: 
+
+Usage ERROR: Time: 0  Memory: 11308  I/O: 32  Swap: 0
+CVC: Propagating Simulation voltages 1...
+Usage SIM1: Time: 0  Memory: 11308  I/O: 32  Swap: 0
+Power nets 2315
+CVC: Propagating Simulation voltages 3...
+Usage SIM2: Time: 0  Memory: 11308  I/O: 32  Swap: 0
+Power nets 2315
+Added 0 latch voltages
+CVC: Calculating min/max voltages...
+Processing trivial nets found 2636 trivial nets
+CVC: Ignoring invalid calculations...
+CVC:   Removed 0 calculations
+Copying master nets
+CVC: Ignoring non-conducting devices...
+CVC:   Ignored 0 devices
+Usage MIN/MAX2: Time: 0  Memory: 11632  I/O: 32  Swap: 0
+Power nets 4515
+! Checking overvoltage errors
+
+! Checking nmos possible leak errors: 
+
+! Checking pmos possible leak errors: 
+
+! Checking mos floating input errors:
+
+! Checking expected values:
+
+CVC: Error Counts
+CVC: Fuse Problems:         0
+CVC: Min Voltage Conflicts: 0
+CVC: Max Voltage Conflicts: 0
+CVC: Leaks:                 0
+CVC: LDD drain->source:     0
+CVC: HI-Z Inputs:           0
+CVC: Forward Bias Diodes:   0
+CVC: NMOS Source vs Bulk:   0
+CVC: NMOS Gate vs Source:   0
+CVC: NMOS Possible Leaks:   0
+CVC: PMOS Source vs Bulk:   0
+CVC: PMOS Gate vs Source:   0
+CVC: PMOS Possible Leaks:   0
+CVC: Overvoltage-VBG:       0
+CVC: Overvoltage-VBS:       0
+CVC: Overvoltage-VDS:       0
+CVC: Overvoltage-VGS:       0
+CVC: Model errors:          0
+CVC: Unexpected voltage :   0
+CVC: Total:                 0
+Usage Total: Time: 0  Memory: 12276  I/O: 80  Swap: 0
+Virtual net update/access 40798/1490013
+CVC: Log output to /foss/designs/ma2022/shiftregister/runs/RUN_2022.11.02_11.37.08/reports/finishing/shiftregister.rpt
+CVC: End: Wed Nov  2 11:53:14 2022
+

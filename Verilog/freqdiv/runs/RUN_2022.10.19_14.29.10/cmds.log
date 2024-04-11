@@ -1,0 +1,148 @@
+Wed Oct 19 14:29:11 UTC 2022 - Executing "/foss/tools/openlane/2022.04.07_02.53.08/scripts/mergeLef.py -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/merged_unpadded.lef |& tee /dev/null"
+
+Wed Oct 19 14:29:12 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/mergeLib.py --output /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/synthesis/merged.lib --name sky130A_merged /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Wed Oct 19 14:29:14 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/libtrim.py --cell-file /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/synthesis/trimmed.lib.exclude.list --output /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/synthesis/trimmed.lib /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/synthesis/merged.lib"
+
+Wed Oct 19 14:29:16 UTC 2022 - Executing "echo {openlane 39e93bd396022ed06b9b827335c0b10a714dd32b} > /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/OPENLANE_VERSION"
+
+Wed Oct 19 14:29:16 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/new_tracks.py -i /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/routing/config.tracks"
+
+Wed Oct 19 14:29:16 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Wed Oct 19 14:29:17 UTC 2022 - Executing "yosys -c /foss/tools/openlane/2022.04.07_02.53.08/scripts/yosys/synth.tcl -l /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Wed Oct 19 14:29:20 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/results\/synthesis\/clock_divider.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:29:20 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:29:20 UTC 2022 - Executing "sed -i /defparam/d /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/synthesis/clock_divider.v"
+
+Wed Oct 19 14:29:20 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/sta.tcl"
+
+Wed Oct 19 14:29:22 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/floorplan.tcl"
+
+Wed Oct 19 14:29:24 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/defutil.py extract_core_dims --output-data /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/dimensions.txt --input-lef /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/merged.lef /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/floorplan/3-initial_fp.def"
+
+Wed Oct 19 14:29:26 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/ioplacer.tcl"
+
+Wed Oct 19 14:29:27 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/tapcell.tcl"
+
+Wed Oct 19 14:29:28 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/pdn.tcl"
+
+Wed Oct 19 14:29:30 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/replace.tcl"
+
+Wed Oct 19 14:29:32 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/resizer.tcl"
+
+Wed Oct 19 14:29:34 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Oct 19 14:29:35 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/results\/placement\/clock_divider.resized.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:29:35 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/results\/synthesis\/clock_divider.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:29:35 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/opendp.tcl"
+
+Wed Oct 19 14:29:36 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/libtrim.py --cell-file /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/cts/cts.lib.exclude.list --output /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/cts/cts.lib /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Wed Oct 19 14:29:38 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/cts.tcl"
+
+Wed Oct 19 14:35:21 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Oct 19 14:35:24 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/results\/cts\/clock_divider.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:35:24 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/results\/placement\/clock_divider.resized.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:35:25 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/resizer_timing.tcl"
+
+Wed Oct 19 14:35:30 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Oct 19 14:35:31 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/results\/cts\/clock_divider.resized.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:35:31 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/results\/cts\/clock_divider.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:35:31 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/opendp.tcl"
+
+Wed Oct 19 14:35:32 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/groute.tcl"
+
+Wed Oct 19 14:35:35 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/fill.tcl"
+
+Wed Oct 19 14:35:36 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Oct 19 14:35:36 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/tmp\/routing\/17-global.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:35:36 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/results\/cts\/clock_divider.resized.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:35:36 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/droute.tcl"
+
+Wed Oct 19 14:35:50 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/tr_drc_to_klayout_drc.py -i /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/routing/detailed.drc -o /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/routing/detailed.klayout.xml --design-name clock_divider"
+
+Wed Oct 19 14:35:51 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Oct 19 14:35:53 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/tmp\/routing\/19-detailed.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:35:53 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/tmp\/routing\/17-global.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:35:53 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/rcx.tcl"
+
+Wed Oct 19 14:35:55 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/rcx.tcl"
+
+Wed Oct 19 14:35:57 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/rcx.tcl"
+
+Wed Oct 19 14:36:03 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/sta.tcl"
+
+Wed Oct 19 14:36:05 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/sta_multi_corner.tcl"
+
+Wed Oct 19 14:36:09 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic/mag_gds.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/26-gdsii.log"
+
+Wed Oct 19 14:36:10 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic/gds_pointers.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/26-gds_ptrs.log"
+
+Wed Oct 19 14:36:10 UTC 2022 - Executing "sed -i -n {/^<< properties >>/,/^<< end >>/p} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/gds_ptrs.mag"
+
+Wed Oct 19 14:36:10 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic/lef.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/26-lef.log"
+
+Wed Oct 19 14:36:11 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic/maglef.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/26-maglef.log"
+
+Wed Oct 19 14:36:12 UTC 2022 - Executing "klayout -b -rm /foss/tools/openlane/2022.04.07_02.53.08/scripts/klayout/def2gds.py -rd out_gds=/foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.klayout.gds -rd tech_file=/foss/pdk/sky130A/libs.tech/klayout/sky130A.lyt -rd design_name=clock_divider -rd in_def=/foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/routing/clock_divider.def -rd {in_gds=/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds } -rd config_file= -rd seal_gds= -rd lef_file=/foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/merged.lef |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/27-gdsii-klayout.log"
+
+Wed Oct 19 14:36:16 UTC 2022 - Executing "bash /foss/tools/openlane/2022.04.07_02.53.08/scripts/klayout/xor.sh /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.gds /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.klayout.gds clock_divider /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/clock_divider.xor.gds |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/28-xor.log"
+
+Wed Oct 19 14:36:26 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/parse_klayout_xor_log.py -l /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/28-xor.log -o /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/28-xor.rpt"
+
+Wed Oct 19 14:36:27 UTC 2022 - Executing "bash /foss/tools/openlane/2022.04.07_02.53.08/scripts/klayout/xor.sh /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.gds /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.klayout.gds clock_divider /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/clock_divider.xor.xml |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/28-xor.log"
+
+Wed Oct 19 14:36:36 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/parse_klayout_xor_log.py -l /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/28-xor.log -o /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/28-xor.rpt"
+
+Wed Oct 19 14:36:37 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/spice.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/29-spice.log"
+
+Wed Oct 19 14:36:38 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/write_powered_def.py -d /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/routing/clock_divider.def -l /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/merged.lef --power-port VPWR --ground-port VGND --powered-netlist {} -o /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/29-powered_def.def |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/30-write_powered_def.log"
+
+Wed Oct 19 14:36:38 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/write_verilog.tcl"
+
+Wed Oct 19 14:36:40 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/tmp\/finishing\/29-powered_netlist.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:36:40 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/freqdiv\/runs\/RUN_2022.10.19_14.29.10\/tmp\/routing\/19-detailed.v/} /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/config.tcl"
+
+Wed Oct 19 14:36:40 UTC 2022 - Executing "netgen -batch source /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/32-setup_file.lef.lvs |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/32-lef.log"
+
+Wed Oct 19 14:36:40 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic/drc.tcl </dev/null |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/33-drc.log"
+
+Wed Oct 19 14:36:42 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic_drc_to_tcl.py -i /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/drc.rpt -o /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/drc.tcl"
+
+Wed Oct 19 14:36:43 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic_drc_to_tr_drc.py -i /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/drc.rpt -o /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/drc.tr"
+
+Wed Oct 19 14:36:43 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/tr_drc_to_klayout_drc.py -i /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/drc.tr -o /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/drc.klayout.xml --design-name clock_divider"
+
+Wed Oct 19 14:36:44 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/magic_drc_to_rdb.py --magic_drc_in /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/drc.rpt --rdb_out /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/drc.rdb"
+
+Wed Oct 19 14:36:45 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/antenna_check.tcl"
+
+Wed Oct 19 14:36:46 UTC 2022 - Executing "awk -v vdd=VPWR -v gnd=VGND -f /foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/power.awk /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/29-powered_netlist.v > /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/clock_divider.power"
+
+Wed Oct 19 14:36:46 UTC 2022 - Executing "awk -f /foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/cdl.awk /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/results/finishing/clock_divider.lef.spice > /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/tmp/finishing/clock_divider.cdl"
+
+Wed Oct 19 14:36:46 UTC 2022 - Executing "cvc /foss/tools/openlane/2022.04.07_02.53.08/scripts/cvc/sky130A/cvcrc.sky130A |& tee /dev/null /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/35-erc_screen.log"
+
+Wed Oct 19 14:36:47 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/generate_reports.py -d /foss/designs/ma2022/freqdiv --design_name clock_divider --tag RUN_2022.10.19_14.29.10 --output_file /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/final_summary_report.csv --man_report /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/manufacturability_report.rpt --run_path /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10"
+
+Wed Oct 19 14:36:50 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/generate_reports.py -d /foss/designs/ma2022/freqdiv --design_name clock_divider --tag RUN_2022.10.19_14.29.10 --output_file /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/final_summary_report.csv --man_report /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/manufacturability_report.rpt --run_path /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10"
+

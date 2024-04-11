@@ -1,0 +1,17 @@
+
+10. Printing statistics.
+
+=== shiftregister ===
+
+   Number of wires:                 41
+   Number of wire bits:            134
+   Number of public wires:           9
+   Number of public wire bits:     102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 96
+     $_DFFE_PP0N_                   32
+     $_DFFE_PP0P_                   32
+     $_MUX_                         32
+

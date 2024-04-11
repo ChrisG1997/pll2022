@@ -1,0 +1,25 @@
+OpenROAD v2.0-5460-g127815b81 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef at line 930.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/routing/wrapper.def
+[INFO ODB-0128] Design: wrapper
+[INFO ODB-0130]     Created 51 pins.
+[INFO ODB-0131]     Created 4714 components and 21896 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 17890 connections.
+[INFO ODB-0133]     Created 1311 nets and 4004 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/ma2022/wrapper/runs/RUN_2023.03.12_07.43.52/results/routing/wrapper.def
+Top-level design name: wrapper
+Found default power net 'vdd'
+Found default ground net 'vss'
+Found 1 power ports.
+Found 1 ground ports.
+Modified power connections of 4714/4714 cells.

@@ -1,0 +1,1 @@
+lvs {/foss/designs/ma2022/wrapper/runs/RUN_2022.11.11_11.09.27/results/signoff/wrapper.spice wrapper} {/foss/designs/ma2022/wrapper/runs/RUN_2022.11.11_11.09.27/tmp/signoff/30-wrapper.pnl.v wrapper} /foss/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /foss/designs/ma2022/wrapper/runs/RUN_2022.11.11_11.09.27/logs/signoff/33-wrapper.lef.lvs.log -json

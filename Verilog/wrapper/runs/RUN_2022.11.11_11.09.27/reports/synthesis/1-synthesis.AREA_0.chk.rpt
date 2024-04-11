@@ -1,0 +1,46 @@
+
+33. Executing CHECK pass (checking for obvious problems).
+Checking module wrapper...
+Warning: Wire wrapper.\vbias3 [7] is used but has no driver.
+Warning: Wire wrapper.\vbias3 [6] is used but has no driver.
+Warning: Wire wrapper.\vbias3 [5] is used but has no driver.
+Warning: Wire wrapper.\vbias3 [4] is used but has no driver.
+Warning: Wire wrapper.\vbias3 [3] is used but has no driver.
+Warning: Wire wrapper.\vbias3 [2] is used but has no driver.
+Warning: Wire wrapper.\vbias3 [1] is used but has no driver.
+Warning: Wire wrapper.\vbias3 [0] is used but has no driver.
+Warning: Wire wrapper.\vbias2 [7] is used but has no driver.
+Warning: Wire wrapper.\vbias2 [6] is used but has no driver.
+Warning: Wire wrapper.\vbias2 [5] is used but has no driver.
+Warning: Wire wrapper.\vbias2 [4] is used but has no driver.
+Warning: Wire wrapper.\vbias2 [3] is used but has no driver.
+Warning: Wire wrapper.\vbias2 [2] is used but has no driver.
+Warning: Wire wrapper.\vbias2 [1] is used but has no driver.
+Warning: Wire wrapper.\vbias2 [0] is used but has no driver.
+Warning: Wire wrapper.\vbias1 [7] is used but has no driver.
+Warning: Wire wrapper.\vbias1 [6] is used but has no driver.
+Warning: Wire wrapper.\vbias1 [5] is used but has no driver.
+Warning: Wire wrapper.\vbias1 [4] is used but has no driver.
+Warning: Wire wrapper.\vbias1 [3] is used but has no driver.
+Warning: Wire wrapper.\vbias1 [2] is used but has no driver.
+Warning: Wire wrapper.\vbias1 [1] is used but has no driver.
+Warning: Wire wrapper.\vbias1 [0] is used but has no driver.
+Warning: Wire wrapper.\slope_ctrl [2] is used but has no driver.
+Warning: Wire wrapper.\slope_ctrl [1] is used but has no driver.
+Warning: Wire wrapper.\slope_ctrl [0] is used but has no driver.
+Warning: Wire wrapper.\s_out is used but has no driver.
+Warning: Wire wrapper.\lock is used but has no driver.
+Warning: Wire wrapper.\dac [9] is used but has no driver.
+Warning: Wire wrapper.\dac [8] is used but has no driver.
+Warning: Wire wrapper.\dac [7] is used but has no driver.
+Warning: Wire wrapper.\dac [6] is used but has no driver.
+Warning: Wire wrapper.\dac [5] is used but has no driver.
+Warning: Wire wrapper.\dac [4] is used but has no driver.
+Warning: Wire wrapper.\dac [3] is used but has no driver.
+Warning: Wire wrapper.\dac [2] is used but has no driver.
+Warning: Wire wrapper.\dac [1] is used but has no driver.
+Warning: Wire wrapper.\dac [0] is used but has no driver.
+Warning: Wire wrapper.\corner [2] is used but has no driver.
+Warning: Wire wrapper.\corner [1] is used but has no driver.
+Warning: Wire wrapper.\corner [0] is used but has no driver.
+Found and reported 42 problems.

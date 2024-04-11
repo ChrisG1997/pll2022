@@ -1,0 +1,16 @@
+Tue Sep 20 17:09:29 UTC 2022 - Executing "/foss/tools/openlane/2022.04.07_02.53.08/scripts/mergeLef.py -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/tmp/merged_unpadded.lef |& tee /dev/null"
+
+Tue Sep 20 17:09:29 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/mergeLib.py --output /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/tmp/synthesis/merged.lib --name sky130A_merged /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Tue Sep 20 17:09:30 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/libtrim.py --cell-file /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/tmp/synthesis/trimmed.lib.exclude.list --output /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/tmp/synthesis/trimmed.lib /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/tmp/synthesis/merged.lib"
+
+Tue Sep 20 17:09:31 UTC 2022 - Executing "echo {openlane 39e93bd396022ed06b9b827335c0b10a714dd32b} > /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/OPENLANE_VERSION"
+
+Tue Sep 20 17:09:31 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/new_tracks.py -i /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/tmp/routing/config.tracks"
+
+Tue Sep 20 17:09:31 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Tue Sep 20 17:09:31 UTC 2022 - Executing "yosys -c /foss/tools/openlane/2022.04.07_02.53.08/scripts/yosys/synth.tcl -l /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Tue Sep 20 17:09:32 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/generate_reports.py -d /foss/designs/dcc --design_name dcc --tag RUN_2022.09.20_17.09.28 --output_file /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/reports/final_summary_report.csv --man_report /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28/reports/manufacturability_report.rpt --run_path /foss/designs/dcc/runs/RUN_2022.09.20_17.09.28"
+

@@ -1,0 +1,10 @@
+vdd power 1.8
+vss power 0.0
+#define std_input min@vss max@vdd
+clk_in input std_input
+load input std_input
+read input std_input
+ref_in input std_input
+reset input std_input
+s_in input std_input
+vco_in input std_input

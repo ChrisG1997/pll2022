@@ -1,0 +1,19 @@
+Design Name: clock_divider
+Run Directory: /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10
+----------------------------------------
+
+Magic DRC Summary:
+Source: /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/logs/finishing/32-clock_divider.lvs.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /foss/designs/ma2022/freqdiv/runs/RUN_2022.10.19_14.29.10/reports/finishing/antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

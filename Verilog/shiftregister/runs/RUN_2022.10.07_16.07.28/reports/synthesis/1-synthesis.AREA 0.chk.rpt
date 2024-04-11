@@ -1,0 +1,37 @@
+
+23. Executing CHECK pass (checking for obvious problems).
+Checking module shiftregister...
+Warning: Wire shiftregister.\s_out is used but has no driver.
+Warning: Wire shiftregister.\r_load [31] is used but has no driver.
+Warning: Wire shiftregister.\r_load [30] is used but has no driver.
+Warning: Wire shiftregister.\r_load [29] is used but has no driver.
+Warning: Wire shiftregister.\r_load [28] is used but has no driver.
+Warning: Wire shiftregister.\r_load [27] is used but has no driver.
+Warning: Wire shiftregister.\r_load [26] is used but has no driver.
+Warning: Wire shiftregister.\r_load [25] is used but has no driver.
+Warning: Wire shiftregister.\r_load [24] is used but has no driver.
+Warning: Wire shiftregister.\r_load [23] is used but has no driver.
+Warning: Wire shiftregister.\r_load [22] is used but has no driver.
+Warning: Wire shiftregister.\r_load [21] is used but has no driver.
+Warning: Wire shiftregister.\r_load [20] is used but has no driver.
+Warning: Wire shiftregister.\r_load [19] is used but has no driver.
+Warning: Wire shiftregister.\r_load [18] is used but has no driver.
+Warning: Wire shiftregister.\r_load [17] is used but has no driver.
+Warning: Wire shiftregister.\r_load [16] is used but has no driver.
+Warning: Wire shiftregister.\r_load [15] is used but has no driver.
+Warning: Wire shiftregister.\r_load [14] is used but has no driver.
+Warning: Wire shiftregister.\r_load [13] is used but has no driver.
+Warning: Wire shiftregister.\r_load [12] is used but has no driver.
+Warning: Wire shiftregister.\r_load [11] is used but has no driver.
+Warning: Wire shiftregister.\r_load [10] is used but has no driver.
+Warning: Wire shiftregister.\r_load [9] is used but has no driver.
+Warning: Wire shiftregister.\r_load [8] is used but has no driver.
+Warning: Wire shiftregister.\r_load [7] is used but has no driver.
+Warning: Wire shiftregister.\r_load [6] is used but has no driver.
+Warning: Wire shiftregister.\r_load [5] is used but has no driver.
+Warning: Wire shiftregister.\r_load [4] is used but has no driver.
+Warning: Wire shiftregister.\r_load [3] is used but has no driver.
+Warning: Wire shiftregister.\r_load [2] is used but has no driver.
+Warning: Wire shiftregister.\r_load [1] is used but has no driver.
+Warning: Wire shiftregister.\r_load [0] is used but has no driver.
+Found and reported 33 problems.

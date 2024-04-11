@@ -1,0 +1,155 @@
+Netgen 1.5.219 compiled on Thu Apr 21 06:45:54 UTC 2022
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
+Reading netlist file /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/results/finishing/shiftregister.spice
+Reading netlist file /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/tmp/finishing/29-powered_netlist.v
+Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
+Creating placeholder cell definition for module sky130_fd_sc_hd__diode_2.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_4.
+Creating placeholder cell definition for module sky130_fd_sc_hd__fill_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__fill_2.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_8.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_12.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_6.
+Creating placeholder cell definition for module sky130_fd_sc_hd__decap_3.
+Creating placeholder cell definition for module sky130_fd_sc_hd__tapvpwrvgnd_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__clkbuf_2.
+Creating placeholder cell definition for module sky130_fd_sc_hd__mux2_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__clkbuf_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__buf_2.
+Creating placeholder cell definition for module sky130_fd_sc_hd__or2b_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__inv_2.
+Creating placeholder cell definition for module sky130_fd_sc_hd__dfxtp_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__dfrtp_2.
+Creating placeholder cell definition for module sky130_fd_sc_hd__dfrtp_1.
+Creating placeholder cell definition for module sky130_fd_sc_hd__clkbuf_16.
+Creating placeholder cell definition for module sky130_fd_sc_hd__dlymetal6s2s_1.
+Reading setup file /foss/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Comparison output logged to file /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/logs/finishing/32-shiftregister.lef.log
+Logging to file "/foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/logs/finishing/32-shiftregister.lef.log" enabled
+Circuit sky130_fd_sc_hd__decap_12 contains no devices.
+Circuit sky130_fd_sc_hd__mux2_1 contains no devices.
+Circuit sky130_fd_sc_hd__decap_8 contains no devices.
+Circuit sky130_fd_sc_hd__dfrtp_1 contains no devices.
+Circuit sky130_fd_sc_hd__inv_2 contains no devices.
+Circuit sky130_fd_sc_hd__clkbuf_1 contains no devices.
+Circuit sky130_fd_sc_hd__decap_4 contains no devices.
+Circuit sky130_fd_sc_hd__fill_2 contains no devices.
+Circuit sky130_fd_sc_hd__decap_6 contains no devices.
+Circuit sky130_fd_sc_hd__fill_1 contains no devices.
+Circuit sky130_fd_sc_hd__clkbuf_2 contains no devices.
+Circuit sky130_fd_sc_hd__decap_3 contains no devices.
+Circuit sky130_fd_sc_hd__buf_2 contains no devices.
+Circuit sky130_fd_sc_hd__tapvpwrvgnd_1 contains no devices.
+Circuit sky130_fd_sc_hd__dfxtp_1 contains no devices.
+Circuit sky130_fd_sc_hd__clkbuf_16 contains no devices.
+Circuit sky130_fd_sc_hd__dlymetal6s2s_1 contains no devices.
+Circuit sky130_fd_sc_hd__or2b_1 contains no devices.
+Circuit sky130_fd_sc_hd__dfrtp_2 contains no devices.
+Circuit sky130_fd_sc_hd__diode_2 contains no devices.
+
+Contents of circuit 1:  Circuit: 'shiftregister'
+Circuit shiftregister contains 1146 device instances.
+  Class: sky130_fd_sc_hd__clkbuf_16 instances:   1
+  Class: sky130_fd_sc_hd__dfxtp_1 instances:  32
+  Class: sky130_fd_sc_hd__buf_2 instances:  49
+  Class: sky130_fd_sc_hd__dfrtp_1 instances:  31
+  Class: sky130_fd_sc_hd__dfrtp_2 instances:   1
+  Class: sky130_fd_sc_hd__inv_2 instances:  32
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:  90
+  Class: sky130_fd_sc_hd__clkbuf_2 instances:  29
+  Class: sky130_fd_sc_hd__decap_3 instances:  76
+  Class: sky130_fd_sc_hd__decap_4 instances: 241
+  Class: sky130_fd_sc_hd__decap_6 instances:  67
+  Class: sky130_fd_sc_hd__decap_8 instances:  82
+  Class: sky130_fd_sc_hd__mux2_1 instances:  96
+  Class: sky130_fd_sc_hd__diode_2 instances:   2
+  Class: sky130_fd_sc_hd__dlymetal6s2s_1 instances:   7
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances: 102
+  Class: sky130_fd_sc_hd__fill_1 instances: 101
+  Class: sky130_fd_sc_hd__fill_2 instances:  44
+  Class: sky130_fd_sc_hd__decap_12 instances:  62
+  Class: sky130_fd_sc_hd__or2b_1 instances:   1
+Circuit contains 408 nets.
+Contents of circuit 2:  Circuit: 'shiftregister'
+Circuit shiftregister contains 1146 device instances.
+  Class: sky130_fd_sc_hd__clkbuf_16 instances:   1
+  Class: sky130_fd_sc_hd__dfxtp_1 instances:  32
+  Class: sky130_fd_sc_hd__buf_2 instances:  49
+  Class: sky130_fd_sc_hd__dfrtp_1 instances:  31
+  Class: sky130_fd_sc_hd__dfrtp_2 instances:   1
+  Class: sky130_fd_sc_hd__inv_2 instances:  32
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:  90
+  Class: sky130_fd_sc_hd__clkbuf_2 instances:  29
+  Class: sky130_fd_sc_hd__decap_3 instances:  76
+  Class: sky130_fd_sc_hd__decap_4 instances: 241
+  Class: sky130_fd_sc_hd__decap_6 instances:  67
+  Class: sky130_fd_sc_hd__decap_8 instances:  82
+  Class: sky130_fd_sc_hd__mux2_1 instances:  96
+  Class: sky130_fd_sc_hd__diode_2 instances:   2
+  Class: sky130_fd_sc_hd__dlymetal6s2s_1 instances:   7
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances: 102
+  Class: sky130_fd_sc_hd__fill_1 instances: 101
+  Class: sky130_fd_sc_hd__fill_2 instances:  44
+  Class: sky130_fd_sc_hd__decap_12 instances:  62
+  Class: sky130_fd_sc_hd__or2b_1 instances:   1
+Circuit contains 408 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'shiftregister'
+Circuit shiftregister contains 379 device instances.
+  Class: sky130_fd_sc_hd__clkbuf_16 instances:   1
+  Class: sky130_fd_sc_hd__dfxtp_1 instances:  32
+  Class: sky130_fd_sc_hd__buf_2 instances:  49
+  Class: sky130_fd_sc_hd__dfrtp_1 instances:  31
+  Class: sky130_fd_sc_hd__dfrtp_2 instances:   1
+  Class: sky130_fd_sc_hd__inv_2 instances:  32
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:  90
+  Class: sky130_fd_sc_hd__clkbuf_2 instances:  29
+  Class: sky130_fd_sc_hd__decap_3 instances:   1
+  Class: sky130_fd_sc_hd__decap_4 instances:   1
+  Class: sky130_fd_sc_hd__decap_6 instances:   1
+  Class: sky130_fd_sc_hd__decap_8 instances:   1
+  Class: sky130_fd_sc_hd__mux2_1 instances:  96
+  Class: sky130_fd_sc_hd__diode_2 instances:   2
+  Class: sky130_fd_sc_hd__dlymetal6s2s_1 instances:   7
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_2 instances:   1
+  Class: sky130_fd_sc_hd__decap_12 instances:   1
+  Class: sky130_fd_sc_hd__or2b_1 instances:   1
+Circuit contains 408 nets.
+Contents of circuit 2:  Circuit: 'shiftregister'
+Circuit shiftregister contains 379 device instances.
+  Class: sky130_fd_sc_hd__clkbuf_16 instances:   1
+  Class: sky130_fd_sc_hd__dfxtp_1 instances:  32
+  Class: sky130_fd_sc_hd__buf_2 instances:  49
+  Class: sky130_fd_sc_hd__dfrtp_1 instances:  31
+  Class: sky130_fd_sc_hd__dfrtp_2 instances:   1
+  Class: sky130_fd_sc_hd__inv_2 instances:  32
+  Class: sky130_fd_sc_hd__clkbuf_1 instances:  90
+  Class: sky130_fd_sc_hd__clkbuf_2 instances:  29
+  Class: sky130_fd_sc_hd__decap_3 instances:   1
+  Class: sky130_fd_sc_hd__decap_4 instances:   1
+  Class: sky130_fd_sc_hd__decap_6 instances:   1
+  Class: sky130_fd_sc_hd__decap_8 instances:   1
+  Class: sky130_fd_sc_hd__mux2_1 instances:  96
+  Class: sky130_fd_sc_hd__diode_2 instances:   2
+  Class: sky130_fd_sc_hd__dlymetal6s2s_1 instances:   7
+  Class: sky130_fd_sc_hd__tapvpwrvgnd_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_1 instances:   1
+  Class: sky130_fd_sc_hd__fill_2 instances:   1
+  Class: sky130_fd_sc_hd__decap_12 instances:   1
+  Class: sky130_fd_sc_hd__or2b_1 instances:   1
+Circuit contains 408 nets.
+
+Circuit 1 contains 379 devices, Circuit 2 contains 379 devices.
+Circuit 1 contains 408 nets,    Circuit 2 contains 408 nets.
+
+Netlists match uniquely.
+Result: Circuits match uniquely.
+Logging to file "/foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/logs/finishing/32-shiftregister.lef.log" disabled
+LVS Done.

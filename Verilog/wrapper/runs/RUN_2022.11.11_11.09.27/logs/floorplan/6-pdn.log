@@ -1,0 +1,29 @@
+OpenROAD v2.0-5460-g127815b81 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO PDN-0001] Inserting grid: stdcell_grid
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vdd is not explicitly set.
+[WARNING PSM-0022] Using voltage 1.800V for VDD network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[INFO PSM-0076] Setting metal node density to be standard cell height times 5.
+[WARNING PSM-0030] VSRC location at (96.830um, 102.000um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (21.840um, 27.530um).
+[INFO PSM-0031] Number of PDN nodes on net vdd = 1036.
+[INFO PSM-0064] Number of voltage sources = 1.
+[INFO PSM-0040] All PDN stripes on net vdd are connected.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net vss is not explicitly set.
+[WARNING PSM-0021] Using voltage 0.000V for ground network.
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[INFO PSM-0076] Setting metal node density to be standard cell height times 5.
+[WARNING PSM-0030] VSRC location at (96.830um, 102.000um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (25.140um, 30.830um).
+[INFO PSM-0031] Number of PDN nodes on net vss = 1036.
+[INFO PSM-0064] Number of voltage sources = 1.
+[INFO PSM-0040] All PDN stripes on net vss are connected.
+Setting global connections for newly added cells...
+Writing OpenROAD database to /foss/designs/ma2022/wrapper/runs/RUN_2022.11.11_11.09.27/tmp/floorplan/6-pdn.odb...
+Writing layout to /foss/designs/ma2022/wrapper/runs/RUN_2022.11.11_11.09.27/tmp/floorplan/6-pdn.def...

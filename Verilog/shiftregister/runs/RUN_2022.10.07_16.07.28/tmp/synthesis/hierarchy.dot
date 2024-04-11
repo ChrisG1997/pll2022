@@ -1,0 +1,35 @@
+digraph "shiftregister" {
+label="shiftregister";
+rankdir="LR";
+remincross=true;
+n3 [ shape=diamond, label="t_load", color="black", fontcolor="black" ];
+n4 [ shape=diamond, label="r_reg", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="r_read", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="r_load", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="s_out", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="s_in", color="black", fontcolor="black" ];
+n9 [ shape=octagon, label="read", color="black", fontcolor="black" ];
+n10 [ shape=octagon, label="load", color="black", fontcolor="black" ];
+n11 [ shape=octagon, label="reset", color="black", fontcolor="black" ];
+n12 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+x1 [ shape=record, style=rounded, label="<s1> 0:0 - 31:31 |<s0> 31:1 - 30:0 " ];
+p0 [shape=box, style=rounded, label="PROC $1\n/foss/designs/ma2022/shiftregister/src/shiftregister.v:16.4-32.7"];
+x2 [ shape=record, style=rounded, label="<s0> 0:0 - 0:0 " ];
+x3 [shape=box, style=rounded, label="BUF"];
+n10:e -> p0:w [color="black", label=""];
+n11:e -> p0:w [color="black", label=""];
+n12:e -> p0:w [color="black", label=""];
+p0:e -> n3:w [color="black", style="setlinewidth(3)", label=""];
+n3:e -> p0:w [color="black", style="setlinewidth(3)", label=""];
+n3:e -> x3:w:w [color="black", style="setlinewidth(3)", label=""];
+p0:e -> n4:w [color="black", label=""];
+n4:e -> p0:w [color="black", label=""];
+n4:e -> x1:s0:w [color="black", label=""];
+n4:e -> x2:s0:w [color="black", label=""];
+n5:e -> p0:w [color="black", style="setlinewidth(3)", label=""];
+x3:e:e -> n6:w [color="black", style="setlinewidth(3)", label=""];
+x2:e -> n7:w [color="black", label=""];
+n8:e -> x1:s1:w [color="black", label=""];
+n9:e -> p0:w [color="black", label=""];
+x1:e -> p0:w [color="black", style="setlinewidth(3)", label=""];
+}

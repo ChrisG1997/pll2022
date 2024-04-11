@@ -1,0 +1,359 @@
+OpenROAD v2.0-3074-g944855835 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0163] /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib line 23, default_fanout_load is 0.0.
+[INFO ODB-0222] Reading LEF file: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/results/floorplan/shiftregister.def
+[INFO ODB-0128] Design: shiftregister
+[INFO ODB-0130]     Created 70 pins.
+[INFO ODB-0131]     Created 451 components and 2459 component-terminals.
+[INFO ODB-0133]     Created 322 nets and 859 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/results/floorplan/shiftregister.def
+[INFO PDN-0016] Power Delivery Network Generator: Generating PDN
+  config: /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/pdn_cfg.tcl
+[INFO PDN-0008] Design name is shiftregister.
+[INFO PDN-0009] Reading technology data.
+[INFO PDN-0011] ****** INFO ******
+Type: stdcell, stdcell_grid
+    Stdcell Rails
+      Layer: met1  -  width: 0.480  pitch: 5.440 
+    Straps
+      Layer: met4  -  width: 1.600  pitch: 29.133  offset: 14.567 
+      Layer: met5  -  width: 1.600  pitch: 29.013  offset: 14.507 
+    Connect: {met4 met5} {met1 met4}
+Type: macro, CORE_macro_grid_1
+    Macro orientation: R0 R180 MX MY R90 R270 MXR90 MYR90
+    Straps
+    Connect: {met4_PIN_ver met5}
+[INFO PDN-0012] **** END INFO ****
+[INFO PDN-0013] Inserting stdcell grid - stdcell_grid.
+[INFO PDN-0015] Writing to database.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net VPWR is not explicitly set.
+[WARNING PSM-0022] Using voltage 1.800V for VDD network.
+[WARNING PSM-0063] Specified bump pitches of 140.000 and 140.000 are less than core width of 87.400 or core height of 87.040. Changing bump location to the center of the die at (43.700, 43.520).
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (43.700um, 43.520um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (49.220um, 54.160um).
+[INFO PSM-0031] Number of PDN nodes on net VPWR = 446.
+[INFO PSM-0064] Number of voltage sources = 1.
+[INFO PSM-0040] All PDN stripes on net VPWR are connected.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net VGND is not explicitly set.
+[WARNING PSM-0021] Using voltage 0.000V for ground network.
+[WARNING PSM-0063] Specified bump pitches of 140.000 and 140.000 are less than core width of 87.400 or core height of 87.040. Changing bump location to the center of the die at (43.700, 43.520).
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (43.700um, 43.520um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (34.653um, 39.653um).
+[INFO PSM-0031] Number of PDN nodes on net VGND = 407.
+[INFO PSM-0064] Number of voltage sources = 1.
+[INFO PSM-0040] All PDN stripes on net VGND are connected.
+[INFO]: Setting RC values...
+[INFO PSM-0002] Output voltage file is specified as: /foss/designs/ma2022/shiftregister/runs/RUN_2022.10.07_16.07.28/tmp/floorplan/6-pdn.pga.rpt.
+[WARNING PSM-0016] Voltage pad location (VSRC) file not specified, defaulting pad location to checkerboard pattern on core area.
+[WARNING PSM-0017] X direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0018] Y direction bump pitch is not specified, defaulting to 140um.
+[WARNING PSM-0019] Voltage on net VPWR is not explicitly set.
+[WARNING PSM-0022] Using voltage 1.800V for VDD network.
+[WARNING PSM-0063] Specified bump pitches of 140.000 and 140.000 are less than core width of 87.400 or core height of 87.040. Changing bump location to the center of the die at (43.700, 43.520).
+[WARNING PSM-0065] VSRC location not specified, using default checkerboard pattern with one VDD every size bumps in x-direction and one in two bumps in the y-direction
+[WARNING PSM-0030] VSRC location at (43.700um, 43.520um) and size 10.000um, is not located on an existing power stripe node. Moving to closest node at (49.220um, 54.160um).
+[INFO PSM-0031] Number of PDN nodes on net VPWR = 446.
+[WARNING PSM-0024] Instance _221_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _222_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _223_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _224_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _225_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _226_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _227_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _228_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _229_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _230_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _231_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _232_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _233_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _234_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _235_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _236_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _237_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _238_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _239_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _240_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _241_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _242_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _243_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _244_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _245_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _246_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _247_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _248_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _249_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _250_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _251_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _252_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _253_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _254_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _255_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _256_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _257_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _258_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _259_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _260_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _261_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _262_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _263_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _264_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _265_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _266_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _267_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _268_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _269_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _270_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _271_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _272_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _273_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _274_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _275_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _276_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _277_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _278_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _279_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _280_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _281_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _282_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _283_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _284_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _285_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _286_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _287_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _288_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _289_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _290_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _291_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _292_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _293_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _294_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _295_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _296_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _297_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _298_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _299_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _300_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _301_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _302_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _303_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _304_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _305_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _306_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _307_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _308_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _309_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _310_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _311_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _312_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _313_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _314_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _315_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _316_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _317_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _318_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _319_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _320_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _321_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _322_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _323_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _324_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _325_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _326_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _327_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _328_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _329_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _330_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _331_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _332_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _333_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _334_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _335_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _336_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _337_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _338_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _339_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _340_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _341_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _342_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _343_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _344_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _345_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _346_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _347_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _348_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _349_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _350_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _351_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _352_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _353_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _354_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _355_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _356_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _357_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _358_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _359_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _360_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _361_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _362_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _363_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _364_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _365_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _366_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _367_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _368_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _369_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _370_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _371_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _372_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _373_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _374_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _375_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _376_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _377_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _378_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _379_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _380_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _381_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _382_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _383_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _384_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _385_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _386_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _387_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _388_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _389_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _390_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _391_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _392_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _393_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _394_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _395_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _396_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _397_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _398_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _399_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _400_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _401_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _402_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _403_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _404_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _405_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _406_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _407_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _408_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _409_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _410_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _411_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _412_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _413_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _414_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _415_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _416_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _417_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _418_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _419_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _420_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _421_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _422_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _423_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _424_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _425_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _426_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _427_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _428_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _429_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _430_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _431_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _432_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _433_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _434_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _435_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _436_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _437_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _438_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _439_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _440_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _441_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _442_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _443_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _444_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _445_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _446_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _447_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _448_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _449_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _450_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _451_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _452_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _453_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _454_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _455_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _456_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _457_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _458_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _459_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _460_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _461_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _462_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _463_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _464_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _465_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _466_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _467_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _468_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _469_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _470_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _471_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _472_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _473_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _474_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _475_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _476_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _477_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _478_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _479_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _480_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _481_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _482_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _483_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _484_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _485_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _486_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _487_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _488_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _489_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _490_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _491_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _492_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _493_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _494_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _495_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _496_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _497_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _498_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _499_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _500_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _501_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _502_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _503_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _504_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[WARNING PSM-0024] Instance _505_, current node at (5400, 13600) at layer 2 have been moved from (0, 0).
+[INFO PSM-0064] Number of voltage sources = 1.
+[INFO PSM-0040] All PDN stripes on net VPWR are connected.
+########## IR report #################
+Worstcase voltage: 1.80e+00 V
+Average IR drop  : 3.12e-10 V
+Worstcase IR drop: 7.48e-09 V
+######################################

@@ -1,0 +1,34 @@
+Fri Oct 07 16:22:04 UTC 2022 - Executing "/foss/tools/openlane/2022.04.07_02.53.08/scripts/mergeLef.py -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/tmp/merged_unpadded.lef |& tee /dev/null"
+
+Fri Oct 07 16:22:04 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/mergeLib.py --output /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/tmp/synthesis/merged.lib --name sky130A_merged /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Fri Oct 07 16:22:07 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/libtrim.py --cell-file /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/tmp/synthesis/trimmed.lib.exclude.list --output /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/tmp/synthesis/trimmed.lib /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/tmp/synthesis/merged.lib"
+
+Fri Oct 07 16:22:08 UTC 2022 - Executing "echo {openlane 39e93bd396022ed06b9b827335c0b10a714dd32b} > /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/OPENLANE_VERSION"
+
+Fri Oct 07 16:22:08 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/new_tracks.py -i /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/tmp/routing/config.tracks"
+
+Fri Oct 07 16:22:09 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Fri Oct 07 16:22:09 UTC 2022 - Executing "yosys -c /foss/tools/openlane/2022.04.07_02.53.08/scripts/yosys/synth.tcl -l /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Fri Oct 07 16:22:10 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/ma2022\/clk_divider\/runs\/RUN_2022.10.07_16.22.03\/results\/synthesis\/clk_divider.v/} /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/config.tcl"
+
+Fri Oct 07 16:22:10 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/config.tcl"
+
+Fri Oct 07 16:22:10 UTC 2022 - Executing "sed -i /defparam/d /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/results/synthesis/clk_divider.v"
+
+Fri Oct 07 16:22:10 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/sta.tcl"
+
+Fri Oct 07 16:22:12 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/floorplan.tcl"
+
+Fri Oct 07 16:22:14 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/defutil.py extract_core_dims --output-data /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/tmp/dimensions.txt --input-lef /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/tmp/merged.lef /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/tmp/floorplan/3-initial_fp.def"
+
+Fri Oct 07 16:22:15 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/ioplacer.tcl"
+
+Fri Oct 07 16:22:16 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/tapcell.tcl"
+
+Fri Oct 07 16:22:17 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.04.07_02.53.08/scripts/openroad/pdn.tcl"
+
+Fri Oct 07 16:22:19 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.04.07_02.53.08/scripts/generate_reports.py -d /foss/designs/ma2022/clk_divider --design_name clk_divider --tag RUN_2022.10.07_16.22.03 --output_file /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/reports/final_summary_report.csv --man_report /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03/reports/manufacturability_report.rpt --run_path /foss/designs/ma2022/clk_divider/runs/RUN_2022.10.07_16.22.03"
+
